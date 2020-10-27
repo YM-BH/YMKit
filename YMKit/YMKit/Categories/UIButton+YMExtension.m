@@ -5,13 +5,13 @@
 //  Created by 白晗 on 2020/10/27.
 //
 
-#import "UIButton+Extension.h"
+#import "UIButton+YMExtension.h"
 
 @implementation UIButton (Extension)
-- (void)bh_setGradientColorFromLeftToRightWithColors:(NSArray<UIColor *> *)colors {
+- (void)ym_setGradientColorFromLeftToRightWithColors:(NSArray<UIColor *> *)colors {
     [self _setGradientColorWithStartPoint:CGPointMake(0, 0.5) endPoint:CGPointMake(1.0, 0.5) colors:colors];
 }
-- (void)bh_setGradientColorFromTopToBottomWithColors:(NSArray<UIColor *> *)colors {
+- (void)ym_setGradientColorFromTopToBottomWithColors:(NSArray<UIColor *> *)colors {
     [self _setGradientColorWithStartPoint:CGPointMake(0.5, 0) endPoint:CGPointMake(0.5, 1) colors:colors];
 }
 

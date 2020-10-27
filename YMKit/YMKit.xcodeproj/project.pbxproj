@@ -14,7 +14,8 @@
 		E1E0E37D25481B7F00F8DA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */; };
 		E1E0E38025481B7F00F8DA76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */; };
 		E1E0E38325481B7F00F8DA76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E38225481B7F00F8DA76 /* main.m */; };
-		E1E0E38D25481BCC00F8DA76 /* UIButton +Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E38B25481BCB00F8DA76 /* UIButton +Extension.m */; };
+		E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E38B25481BCB00F8DA76 /* UIButton+YMExtension.m */; };
+		E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,10 @@
 		E1E0E37F25481B7F00F8DA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1E0E38125481B7F00F8DA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1E0E38225481B7F00F8DA76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E1E0E38B25481BCB00F8DA76 /* UIButton +Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton +Extension.m"; sourceTree = "<group>"; };
-		E1E0E38C25481BCC00F8DA76 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		E1E0E38B25481BCB00F8DA76 /* UIButton+YMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YMExtension.m"; sourceTree = "<group>"; };
+		E1E0E38C25481BCC00F8DA76 /* UIButton+YMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YMExtension.h"; sourceTree = "<group>"; };
+		E1E0E3922548201C00F8DA76 /* NSString+YMExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YMExtension.h"; sourceTree = "<group>"; };
+		E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YMExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +86,10 @@
 		E1E0E38A25481BA300F8DA76 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				E1E0E38B25481BCB00F8DA76 /* UIButton +Extension.m */,
-				E1E0E38C25481BCC00F8DA76 /* UIButton+Extension.h */,
+				E1E0E38C25481BCC00F8DA76 /* UIButton+YMExtension.h */,
+				E1E0E38B25481BCB00F8DA76 /* UIButton+YMExtension.m */,
+				E1E0E3922548201C00F8DA76 /* NSString+YMExtension.h */,
+				E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -162,7 +167,8 @@
 				E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */,
 				E1E0E38325481B7F00F8DA76 /* main.m in Sources */,
 				E1E0E37525481B7E00F8DA76 /* SceneDelegate.m in Sources */,
-				E1E0E38D25481BCC00F8DA76 /* UIButton +Extension.m in Sources */,
+				E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */,
+				E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

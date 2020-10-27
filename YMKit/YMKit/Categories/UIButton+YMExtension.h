@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 设置从左到右渐变色
 /// @param colors 颜色数组
-- (void)bh_setGradientColorFromLeftToRightWithColors:(NSArray<UIColor *> *)colors;
+- (void)ym_setGradientColorFromLeftToRightWithColors:(NSArray<UIColor *> *)colors;
 
 /// 设置从上到下渐变色
 /// @param colors 颜色数组
-- (void)bh_setGradientColorFromTopToBottomWithColors:(NSArray<UIColor *> *)colors;
+- (void)ym_setGradientColorFromTopToBottomWithColors:(NSArray<UIColor *> *)colors;
 
 @end
 

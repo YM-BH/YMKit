@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import "UIButton+Extension.h"
+#import "UIButton+YMExtension.h"
 
 @interface ViewController ()
 
@@ -24,7 +24,7 @@
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(20, 100, self.view.bounds.size.width - 40, 44)];
     button.layer.cornerRadius = 20;
     button.layer.masksToBounds = YES;
-    [button bh_setGradientColorFromLeftToRightWithColors:@[[UIColor redColor], [UIColor orangeColor]]];
+    [button ym_setGradientColorFromLeftToRightWithColors:@[[UIColor redColor], [UIColor orangeColor]]];
     [button setTitle:@"提交" forState:UIControlStateNormal];
 //    [button addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
