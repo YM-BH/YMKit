@@ -14,7 +14,7 @@
 - (void)ym_setGradientColorFromTopToBottomWithColors:(NSArray<UIColor *> *)colors {
     [self _setGradientColorWithStartPoint:CGPointMake(0.5, 0) endPoint:CGPointMake(0.5, 1) colors:colors];
 }
-
+/// 设置渐变色
 - (void)_setGradientColorWithStartPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint colors:(NSArray<UIColor *> *)colors {
     
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10DA993254A988000A2740E /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA992254A988000A2740E /* GradientViewController.m */; };
+		E10DA997254A99D100A2740E /* TimestampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA996254A99D100A2740E /* TimestampViewController.m */; };
 		E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37125481B7E00F8DA76 /* AppDelegate.m */; };
 		E1E0E37525481B7E00F8DA76 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37425481B7E00F8DA76 /* SceneDelegate.m */; };
 		E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37725481B7E00F8DA76 /* ViewController.m */; };
@@ -19,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E10DA991254A988000A2740E /* GradientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientViewController.h; sourceTree = "<group>"; };
+		E10DA992254A988000A2740E /* GradientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientViewController.m; sourceTree = "<group>"; };
+		E10DA995254A99D100A2740E /* TimestampViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimestampViewController.h; sourceTree = "<group>"; };
+		E10DA996254A99D100A2740E /* TimestampViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimestampViewController.m; sourceTree = "<group>"; };
 		E1E0E36D25481B7E00F8DA76 /* YMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E0E37025481B7E00F8DA76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1E0E37125481B7E00F8DA76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +80,10 @@
 				E1E0E37425481B7E00F8DA76 /* SceneDelegate.m */,
 				E1E0E37625481B7E00F8DA76 /* ViewController.h */,
 				E1E0E37725481B7E00F8DA76 /* ViewController.m */,
+				E10DA991254A988000A2740E /* GradientViewController.h */,
+				E10DA992254A988000A2740E /* GradientViewController.m */,
+				E10DA995254A99D100A2740E /* TimestampViewController.h */,
+				E10DA996254A99D100A2740E /* TimestampViewController.m */,
 				E1E0E37925481B7E00F8DA76 /* Main.storyboard */,
 				E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */,
 				E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */,
@@ -163,12 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10DA993254A988000A2740E /* GradientViewController.m in Sources */,
 				E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */,
 				E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */,
 				E1E0E38325481B7F00F8DA76 /* main.m in Sources */,
 				E1E0E37525481B7E00F8DA76 /* SceneDelegate.m in Sources */,
 				E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */,
 				E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */,
+				E10DA997254A99D100A2740E /* TimestampViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

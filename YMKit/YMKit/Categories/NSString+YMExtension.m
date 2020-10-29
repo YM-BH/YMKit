@@ -9,4 +9,13 @@
 
 @implementation NSString (YMExtension)
 
++ (NSString *)ym_getCurrentTimestampWithType:(YMTimestampType)type {
+    // 获取当前时间
+    NSTimeInterval timeInterval = [[NSDate date] timeIntervalSince1970];
+    if (type == YMTimestampTypeMillisecond) {
+        timeInterval *= 1000;
+    }
+    return  [NSString stringWithFormat:@"%.0f", timeInterval];
+}
+
 @end

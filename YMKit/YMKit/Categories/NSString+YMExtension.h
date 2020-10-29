@@ -9,8 +9,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSString (YMExtension)
+typedef NS_ENUM(NSUInteger, YMTimestampType) {
+    YMTimestampTypeSecond = 0,  //!< 秒
+    YMTimestampTypeMillisecond  //!< 毫秒
+};
 
+
+@interface NSString (YMExtension)
++ (NSString *)ym_getCurrentTimestampWithType:(YMTimestampType)type;
 @end
 
 NS_ASSUME_NONNULL_END
