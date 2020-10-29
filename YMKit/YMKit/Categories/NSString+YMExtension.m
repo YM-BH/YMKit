@@ -12,10 +12,10 @@
 + (NSString *)ym_getCurrentTimestampWithType:(YMTimestampType)type {
     // 获取当前时间
     NSTimeInterval timeInterval = [[NSDate date] timeIntervalSince1970];
-    if (type == YMTimestampTypeMillisecond) {
+    if (type == YMTimestampTypeMillisecond) { // 如果是毫秒，乘以1000
         timeInterval *= 1000;
     }
-    return  [NSString stringWithFormat:@"%.0f", timeInterval];
+    return [NSString stringWithFormat:@"%.0f", timeInterval];
 }
 
 @end
