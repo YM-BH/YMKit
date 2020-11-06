@@ -18,6 +18,8 @@
 		E1E0E38325481B7F00F8DA76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E38225481B7F00F8DA76 /* main.m */; };
 		E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E38B25481BCB00F8DA76 /* UIButton+YMExtension.m */; };
 		E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */; };
+		E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */; };
+		E1E28C8525551E7E00B84CC2 /* PlaceholderTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8425551E7E00B84CC2 /* PlaceholderTextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,10 @@
 		E1E0E38C25481BCC00F8DA76 /* UIButton+YMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YMExtension.h"; sourceTree = "<group>"; };
 		E1E0E3922548201C00F8DA76 /* NSString+YMExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YMExtension.h"; sourceTree = "<group>"; };
 		E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YMExtension.m"; sourceTree = "<group>"; };
+		E1E28C7F25551E3700B84CC2 /* YMPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPlaceholderTextView.h; sourceTree = "<group>"; };
+		E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPlaceholderTextView.m; sourceTree = "<group>"; };
+		E1E28C8325551E7E00B84CC2 /* PlaceholderTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextViewController.h; sourceTree = "<group>"; };
+		E1E28C8425551E7E00B84CC2 /* PlaceholderTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 		E1E0E36F25481B7E00F8DA76 /* YMKit */ = {
 			isa = PBXGroup;
 			children = (
+				E1E28C7E25551D7300B84CC2 /* View */,
 				E1E0E38A25481BA300F8DA76 /* Categories */,
 				E1E0E37025481B7E00F8DA76 /* AppDelegate.h */,
 				E1E0E37125481B7E00F8DA76 /* AppDelegate.m */,
@@ -84,6 +91,8 @@
 				E10DA992254A988000A2740E /* GradientViewController.m */,
 				E10DA995254A99D100A2740E /* TimestampViewController.h */,
 				E10DA996254A99D100A2740E /* TimestampViewController.m */,
+				E1E28C8325551E7E00B84CC2 /* PlaceholderTextViewController.h */,
+				E1E28C8425551E7E00B84CC2 /* PlaceholderTextViewController.m */,
 				E1E0E37925481B7E00F8DA76 /* Main.storyboard */,
 				E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */,
 				E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */,
@@ -102,6 +111,15 @@
 				E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		E1E28C7E25551D7300B84CC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1E28C7F25551E3700B84CC2 /* YMPlaceholderTextView.h */,
+				E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +193,14 @@
 			files = (
 				E10DA993254A988000A2740E /* GradientViewController.m in Sources */,
 				E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */,
+				E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */,
 				E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */,
 				E1E0E38325481B7F00F8DA76 /* main.m in Sources */,
 				E1E0E37525481B7E00F8DA76 /* SceneDelegate.m in Sources */,
 				E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */,
 				E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */,
 				E10DA997254A99D100A2740E /* TimestampViewController.m in Sources */,
+				E1E28C8525551E7E00B84CC2 /* PlaceholderTextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,12 +344,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZGAJ5MQNZ4;
 				INFOPLIST_FILE = YMKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ym.YMKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyz.shop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,12 +362,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZGAJ5MQNZ4;
 				INFOPLIST_FILE = YMKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ym.YMKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyz.shop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

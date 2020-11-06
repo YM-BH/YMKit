@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "GradientViewController.h"
 #import "TimestampViewController.h"
+#import "PlaceholderTextViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -18,7 +19,7 @@
 /// 使用storyboard初始化控制器时候调用
 - (instancetype)initWithCoder:(NSCoder *)coder {
     if (self = [super initWithCoder:coder]) {
-        _demoArray = @[@"渐变按钮", @"时间戳处理"];
+        _demoArray = @[@"渐变按钮", @"时间戳处理", @"带占位TextView"];
     }
     return self;
 }
@@ -60,6 +61,10 @@
         TimestampViewController *timestampVc = [[TimestampViewController alloc] init];
         timestampVc.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:timestampVc animated:YES];
+    } else if ([title isEqualToString:@"带占位TextView"]) {
+        PlaceholderTextViewController *placeholderTextViewVc = [[PlaceholderTextViewController alloc] init];
+        placeholderTextViewVc.view.backgroundColor = [UIColor whiteColor];
+        [self.navigationController pushViewController:placeholderTextViewVc animated:YES];
     }
 }
 
