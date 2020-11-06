@@ -76,4 +76,16 @@
     
     self.alwaysBounceVertical = placeholderShouldScroll;
 }
+
+- (void)setText:(NSString *)text {
+    [super setText:text];
+    
+    [self textDidChange];
+}
+
+- (void)setAttributedText:(NSAttributedString *)attributedText {
+    [super setAttributedText:attributedText];
+    
+    [self textDidChange];
+}
 @end
