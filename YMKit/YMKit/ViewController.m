@@ -9,6 +9,7 @@
 #import "GradientViewController.h"
 #import "TimestampViewController.h"
 #import "PlaceholderTextViewController.h"
+#import "HiddenNavigationBarViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -19,7 +20,7 @@
 /// 使用storyboard初始化控制器时候调用
 - (instancetype)initWithCoder:(NSCoder *)coder {
     if (self = [super initWithCoder:coder]) {
-        _demoArray = @[@"渐变按钮", @"时间戳处理", @"带占位TextView"];
+        _demoArray = @[@"渐变按钮", @"时间戳处理", @"带占位TextView", @"隐藏导航栏"];
     }
     return self;
 }
@@ -65,6 +66,10 @@
         PlaceholderTextViewController *placeholderTextViewVc = [[PlaceholderTextViewController alloc] init];
         placeholderTextViewVc.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:placeholderTextViewVc animated:YES];
+    } else if ([title isEqualToString:@"隐藏导航栏"]) {
+        HiddenNavigationBarViewController *hiddenNavVc = [[HiddenNavigationBarViewController alloc] init];
+        hiddenNavVc.view.backgroundColor = [UIColor whiteColor];
+        [self.navigationController pushViewController:hiddenNavVc animated:YES];
     }
 }
 

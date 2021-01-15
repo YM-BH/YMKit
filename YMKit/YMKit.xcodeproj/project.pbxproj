@@ -20,6 +20,7 @@
 		E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */; };
 		E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */; };
 		E1E28C8525551E7E00B84CC2 /* PlaceholderTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8425551E7E00B84CC2 /* PlaceholderTextViewController.m */; };
+		E1F9819C25B187D90023CD35 /* HiddenNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F9819B25B187D90023CD35 /* HiddenNavigationBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPlaceholderTextView.m; sourceTree = "<group>"; };
 		E1E28C8325551E7E00B84CC2 /* PlaceholderTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextViewController.h; sourceTree = "<group>"; };
 		E1E28C8425551E7E00B84CC2 /* PlaceholderTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextViewController.m; sourceTree = "<group>"; };
+		E1F9819A25B187D90023CD35 /* HiddenNavigationBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiddenNavigationBarViewController.h; sourceTree = "<group>"; };
+		E1F9819B25B187D90023CD35 /* HiddenNavigationBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiddenNavigationBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				E10DA996254A99D100A2740E /* TimestampViewController.m */,
 				E1E28C8325551E7E00B84CC2 /* PlaceholderTextViewController.h */,
 				E1E28C8425551E7E00B84CC2 /* PlaceholderTextViewController.m */,
+				E1F9819A25B187D90023CD35 /* HiddenNavigationBarViewController.h */,
+				E1F9819B25B187D90023CD35 /* HiddenNavigationBarViewController.m */,
 				E1E0E37925481B7E00F8DA76 /* Main.storyboard */,
 				E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */,
 				E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */,
@@ -195,6 +200,7 @@
 				E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */,
 				E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */,
 				E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */,
+				E1F9819C25B187D90023CD35 /* HiddenNavigationBarViewController.m in Sources */,
 				E1E0E38325481B7F00F8DA76 /* main.m in Sources */,
 				E1E0E37525481B7E00F8DA76 /* SceneDelegate.m in Sources */,
 				E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */,
@@ -346,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGAJ5MQNZ4;
 				INFOPLIST_FILE = YMKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,6 +371,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGAJ5MQNZ4;
 				INFOPLIST_FILE = YMKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
