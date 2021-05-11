@@ -5,11 +5,11 @@
 //  Created by 白晗 on 2020/11/6.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PlaceholderTextViewController : UIViewController
+@interface PlaceholderTextViewController : BaseViewController
 
 @end
 
