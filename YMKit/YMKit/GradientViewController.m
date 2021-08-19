@@ -25,8 +25,12 @@
     button.layer.masksToBounds = YES;
     [button ym_setGradientColorFromLeftToRightWithColors:@[[UIColor redColor], [UIColor orangeColor]]];
     [button setTitle:@"提交" forState:UIControlStateNormal];
-//    [button addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+}
+
+- (void)btnClick:(UIButton *)button {
+    NSLog(@"点击了按钮");
 }
 
 @end

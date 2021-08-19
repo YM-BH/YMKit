@@ -9,6 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 带占位文字的 textView
 @interface YMPlaceholderTextView : UITextView
 
 @property (nonatomic, copy) NSString *placeholder; //!< 占位文字

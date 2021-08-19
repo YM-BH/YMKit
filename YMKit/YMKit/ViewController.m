@@ -11,6 +11,7 @@
 #import "PlaceholderTextViewController.h"
 #import "HiddenNavigationBarViewController.h"
 #import "DynamicDownloadFontViewController.h"
+#import "ScreenAdapatorController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -21,7 +22,7 @@
 /// 使用storyboard初始化控制器时候调用
 - (instancetype)initWithCoder:(NSCoder *)coder {
     if (self = [super initWithCoder:coder]) {
-        _demoArray = @[@"渐变按钮", @"时间戳处理", @"带占位TextView", @"隐藏导航栏", @"动态下载字体-学习自唐巧"];
+        _demoArray = @[@"渐变按钮", @"时间戳处理", @"带占位TextView", @"隐藏导航栏", @"动态下载字体-学习自唐巧", @"屏幕适配"];
     }
     return self;
 }
@@ -70,6 +71,9 @@
     } else if ([title isEqualToString:@"动态下载字体-学习自唐巧"]) {
         DynamicDownloadFontViewController *dynamicDownloadFontVc = [[DynamicDownloadFontViewController alloc] init];
         [self.navigationController pushViewController:dynamicDownloadFontVc animated:YES];
+    } else if ([title isEqualToString:@"屏幕适配"]) {
+        ScreenAdapatorController *screenAdapatorVc = [[ScreenAdapatorController alloc] init];
+        [self.navigationController pushViewController:screenAdapatorVc animated:YES];
     }
 }
 
