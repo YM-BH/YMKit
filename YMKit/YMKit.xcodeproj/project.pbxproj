@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E1041138264A19D800CD1573 /* DynamicDownloadFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1041137264A19D800CD1573 /* DynamicDownloadFontViewController.m */; };
+		E1041138264A19D800CD1573 /* DynamicDownloadFontController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1041137264A19D800CD1573 /* DynamicDownloadFontController.m */; };
 		E104113B264A1A6E00CD1573 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E104113A264A1A6E00CD1573 /* BaseViewController.m */; };
 		E104113F264A1B0E00CD1573 /* Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = E104113E264A1B0E00CD1573 /* Fonts.m */; };
-		E10DA993254A988000A2740E /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA992254A988000A2740E /* GradientViewController.m */; };
-		E10DA997254A99D100A2740E /* TimestampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA996254A99D100A2740E /* TimestampViewController.m */; };
+		E10DA993254A988000A2740E /* GradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA992254A988000A2740E /* GradientController.m */; };
+		E10DA997254A99D100A2740E /* TimestampController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA996254A99D100A2740E /* TimestampController.m */; };
 		E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */; };
 		E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */; };
 		E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C4A126CE4033002E2A24 /* NavigationController.m */; };
@@ -23,21 +23,21 @@
 		E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E38B25481BCB00F8DA76 /* UIButton+YMExtension.m */; };
 		E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */; };
 		E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */; };
-		E1E28C8525551E7E00B84CC2 /* PlaceholderTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8425551E7E00B84CC2 /* PlaceholderTextViewController.m */; };
-		E1F9819C25B187D90023CD35 /* HiddenNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F9819B25B187D90023CD35 /* HiddenNavigationBarViewController.m */; };
+		E1E28C8525551E7E00B84CC2 /* PlaceholderTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8425551E7E00B84CC2 /* PlaceholderTextController.m */; };
+		E1F9819C25B187D90023CD35 /* HiddenNavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F9819B25B187D90023CD35 /* HiddenNavigationBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E1041136264A19D800CD1573 /* DynamicDownloadFontViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicDownloadFontViewController.h; sourceTree = "<group>"; };
-		E1041137264A19D800CD1573 /* DynamicDownloadFontViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicDownloadFontViewController.m; sourceTree = "<group>"; };
+		E1041136264A19D800CD1573 /* DynamicDownloadFontController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicDownloadFontController.h; sourceTree = "<group>"; };
+		E1041137264A19D800CD1573 /* DynamicDownloadFontController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicDownloadFontController.m; sourceTree = "<group>"; };
 		E1041139264A1A6E00CD1573 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		E104113A264A1A6E00CD1573 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E104113D264A1B0E00CD1573 /* Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fonts.h; sourceTree = "<group>"; };
 		E104113E264A1B0E00CD1573 /* Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fonts.m; sourceTree = "<group>"; };
-		E10DA991254A988000A2740E /* GradientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientViewController.h; sourceTree = "<group>"; };
-		E10DA992254A988000A2740E /* GradientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientViewController.m; sourceTree = "<group>"; };
-		E10DA995254A99D100A2740E /* TimestampViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimestampViewController.h; sourceTree = "<group>"; };
-		E10DA996254A99D100A2740E /* TimestampViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimestampViewController.m; sourceTree = "<group>"; };
+		E10DA991254A988000A2740E /* GradientController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientController.h; sourceTree = "<group>"; };
+		E10DA992254A988000A2740E /* GradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientController.m; sourceTree = "<group>"; };
+		E10DA995254A99D100A2740E /* TimestampController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimestampController.h; sourceTree = "<group>"; };
+		E10DA996254A99D100A2740E /* TimestampController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimestampController.m; sourceTree = "<group>"; };
 		E1A1C49826CE0DE5002E2A24 /* YMScreenAdapator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMScreenAdapator.h; sourceTree = "<group>"; };
 		E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMScreenAdapator.m; sourceTree = "<group>"; };
 		E1A1C49D26CE0FE0002E2A24 /* ScreenAdapatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenAdapatorController.h; sourceTree = "<group>"; };
@@ -59,10 +59,10 @@
 		E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YMExtension.m"; sourceTree = "<group>"; };
 		E1E28C7F25551E3700B84CC2 /* YMPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPlaceholderTextView.h; sourceTree = "<group>"; };
 		E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPlaceholderTextView.m; sourceTree = "<group>"; };
-		E1E28C8325551E7E00B84CC2 /* PlaceholderTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextViewController.h; sourceTree = "<group>"; };
-		E1E28C8425551E7E00B84CC2 /* PlaceholderTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextViewController.m; sourceTree = "<group>"; };
-		E1F9819A25B187D90023CD35 /* HiddenNavigationBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiddenNavigationBarViewController.h; sourceTree = "<group>"; };
-		E1F9819B25B187D90023CD35 /* HiddenNavigationBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiddenNavigationBarViewController.m; sourceTree = "<group>"; };
+		E1E28C8325551E7E00B84CC2 /* PlaceholderTextController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextController.h; sourceTree = "<group>"; };
+		E1E28C8425551E7E00B84CC2 /* PlaceholderTextController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextController.m; sourceTree = "<group>"; };
+		E1F9819A25B187D90023CD35 /* HiddenNavigationBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiddenNavigationBarController.h; sourceTree = "<group>"; };
+		E1F9819B25B187D90023CD35 /* HiddenNavigationBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiddenNavigationBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 			children = (
 				E104113D264A1B0E00CD1573 /* Fonts.h */,
 				E104113E264A1B0E00CD1573 /* Fonts.m */,
-				E1041136264A19D800CD1573 /* DynamicDownloadFontViewController.h */,
-				E1041137264A19D800CD1573 /* DynamicDownloadFontViewController.m */,
+				E1041136264A19D800CD1573 /* DynamicDownloadFontController.h */,
+				E1041137264A19D800CD1573 /* DynamicDownloadFontController.m */,
 			);
 			path = DynamicDownloadFont;
 			sourceTree = "<group>";
@@ -135,14 +135,14 @@
 				E1A1C4A126CE4033002E2A24 /* NavigationController.m */,
 				E1041139264A1A6E00CD1573 /* BaseViewController.h */,
 				E104113A264A1A6E00CD1573 /* BaseViewController.m */,
-				E10DA991254A988000A2740E /* GradientViewController.h */,
-				E10DA992254A988000A2740E /* GradientViewController.m */,
-				E10DA995254A99D100A2740E /* TimestampViewController.h */,
-				E10DA996254A99D100A2740E /* TimestampViewController.m */,
-				E1E28C8325551E7E00B84CC2 /* PlaceholderTextViewController.h */,
-				E1E28C8425551E7E00B84CC2 /* PlaceholderTextViewController.m */,
-				E1F9819A25B187D90023CD35 /* HiddenNavigationBarViewController.h */,
-				E1F9819B25B187D90023CD35 /* HiddenNavigationBarViewController.m */,
+				E10DA991254A988000A2740E /* GradientController.h */,
+				E10DA992254A988000A2740E /* GradientController.m */,
+				E10DA995254A99D100A2740E /* TimestampController.h */,
+				E10DA996254A99D100A2740E /* TimestampController.m */,
+				E1E28C8325551E7E00B84CC2 /* PlaceholderTextController.h */,
+				E1E28C8425551E7E00B84CC2 /* PlaceholderTextController.m */,
+				E1F9819A25B187D90023CD35 /* HiddenNavigationBarController.h */,
+				E1F9819B25B187D90023CD35 /* HiddenNavigationBarController.m */,
 				E1A1C49D26CE0FE0002E2A24 /* ScreenAdapatorController.h */,
 				E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */,
 				E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */,
@@ -243,21 +243,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */,
-				E10DA993254A988000A2740E /* GradientViewController.m in Sources */,
-				E1041138264A19D800CD1573 /* DynamicDownloadFontViewController.m in Sources */,
+				E10DA993254A988000A2740E /* GradientController.m in Sources */,
+				E1041138264A19D800CD1573 /* DynamicDownloadFontController.m in Sources */,
 				E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */,
 				E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */,
 				E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */,
 				E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */,
 				E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */,
-				E1F9819C25B187D90023CD35 /* HiddenNavigationBarViewController.m in Sources */,
+				E1F9819C25B187D90023CD35 /* HiddenNavigationBarController.m in Sources */,
 				E1E0E38325481B7F00F8DA76 /* main.m in Sources */,
 				E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */,
 				E104113B264A1A6E00CD1573 /* BaseViewController.m in Sources */,
 				E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */,
-				E10DA997254A99D100A2740E /* TimestampViewController.m in Sources */,
+				E10DA997254A99D100A2740E /* TimestampController.m in Sources */,
 				E104113F264A1B0E00CD1573 /* Fonts.m in Sources */,
-				E1E28C8525551E7E00B84CC2 /* PlaceholderTextViewController.m in Sources */,
+				E1E28C8525551E7E00B84CC2 /* PlaceholderTextController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

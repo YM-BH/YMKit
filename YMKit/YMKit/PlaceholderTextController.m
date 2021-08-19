@@ -5,14 +5,14 @@
 //  Created by 白晗 on 2020/11/6.
 //
 
-#import "PlaceholderTextViewController.h"
+#import "PlaceholderTextController.h"
 #import "YMPlaceholderTextView.h"
 
-@interface PlaceholderTextViewController ()
+@interface PlaceholderTextController ()
 
 @end
 
-@implementation PlaceholderTextViewController
+@implementation PlaceholderTextController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -6,11 +6,11 @@
 //
 
 #import "ViewController.h"
-#import "GradientViewController.h"
-#import "TimestampViewController.h"
-#import "PlaceholderTextViewController.h"
-#import "HiddenNavigationBarViewController.h"
-#import "DynamicDownloadFontViewController.h"
+#import "GradientController.h"
+#import "TimestampController.h"
+#import "PlaceholderTextController.h"
+#import "HiddenNavigationBarController.h"
+#import "DynamicDownloadFontController.h"
 #import "ScreenAdapatorController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -56,19 +56,19 @@
     
     NSString *title = _demoArray[indexPath.row];
     if ([title isEqualToString:@"渐变按钮"]) {
-        GradientViewController *gradientVc = [[GradientViewController alloc] init];
+        GradientController *gradientVc = [[GradientController alloc] init];
         [self.navigationController pushViewController:gradientVc animated:YES];
     } else if ([title isEqualToString:@"时间戳处理"]) {
-        TimestampViewController *timestampVc = [[TimestampViewController alloc] init];
+        TimestampController *timestampVc = [[TimestampController alloc] init];
         [self.navigationController pushViewController:timestampVc animated:YES];
     } else if ([title isEqualToString:@"带占位TextView"]) {
-        PlaceholderTextViewController *placeholderTextViewVc = [[PlaceholderTextViewController alloc] init];
+        PlaceholderTextController *placeholderTextViewVc = [[PlaceholderTextController alloc] init];
         [self.navigationController pushViewController:placeholderTextViewVc animated:YES];
     } else if ([title isEqualToString:@"隐藏导航栏"]) {
-        HiddenNavigationBarViewController *hiddenNavVc = [[HiddenNavigationBarViewController alloc] init];
+        HiddenNavigationBarController *hiddenNavVc = [[HiddenNavigationBarController alloc] init];
         [self.navigationController pushViewController:hiddenNavVc animated:YES];
     } else if ([title isEqualToString:@"动态下载字体-学习自唐巧"]) {
-        DynamicDownloadFontViewController *dynamicDownloadFontVc = [[DynamicDownloadFontViewController alloc] init];
+        DynamicDownloadFontController *dynamicDownloadFontVc = [[DynamicDownloadFontController alloc] init];
         [self.navigationController pushViewController:dynamicDownloadFontVc animated:YES];
     } else if ([title isEqualToString:@"屏幕适配"]) {
         ScreenAdapatorController *screenAdapatorVc = [[ScreenAdapatorController alloc] init];

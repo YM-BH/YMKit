@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PlaceholderTextViewController : BaseViewController
+@interface PlaceholderTextController : BaseViewController
 
 @end
 

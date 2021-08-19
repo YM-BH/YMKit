@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GradientViewController : BaseViewController
+@interface GradientController : BaseViewController
 
 @end
 

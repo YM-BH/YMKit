@@ -5,14 +5,14 @@
 //  Created by 白晗 on 2021/1/15.
 //
 
-#import "HiddenNavigationBarViewController.h"
+#import "HiddenNavigationBarController.h"
 
-@interface HiddenNavigationBarViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface HiddenNavigationBarController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) UIView *navView;
 @end
 
-@implementation HiddenNavigationBarViewController
+@implementation HiddenNavigationBarController
 
 - (instancetype)init {
     if (self = [super init]) {

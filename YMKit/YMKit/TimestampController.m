@@ -5,14 +5,14 @@
 //  Created by 白晗 on 2020/10/29.
 //
 
-#import "TimestampViewController.h"
+#import "TimestampController.h"
 #import "NSString+YMExtension.h"
 
-@interface TimestampViewController ()
+@interface TimestampController ()
 @property (nonatomic, strong) UILabel *currentTimestampLabel;
 @end
 
-@implementation TimestampViewController
+@implementation TimestampController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

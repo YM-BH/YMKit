@@ -5,17 +5,17 @@
 //  Created by 白晗 on 2021/5/11.
 //
 
-#import "DynamicDownloadFontViewController.h"
+#import "DynamicDownloadFontController.h"
 #import "Fonts.h"
 
-@interface DynamicDownloadFontViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface DynamicDownloadFontController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) UILabel *someLabel;
 @property (strong, nonatomic) UITableView *tableView;
 @property (nonatomic, strong) NSArray *fontNames;
 
 @end
 
-@implementation DynamicDownloadFontViewController
+@implementation DynamicDownloadFontController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];

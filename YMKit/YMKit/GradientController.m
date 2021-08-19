@@ -5,14 +5,14 @@
 //  Created by 白晗 on 2020/10/29.
 //
 
-#import "GradientViewController.h"
+#import "GradientController.h"
 #import "UIButton+YMExtension.h"
 
-@interface GradientViewController ()
+@interface GradientController ()
 
 @end
 
-@implementation GradientViewController
+@implementation GradientController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
