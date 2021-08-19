@@ -14,24 +14,23 @@
 #import "ScreenAdapatorController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *demoArray;
 @end
 
 @implementation ViewController
-/// 使用storyboard初始化控制器时候调用
-- (instancetype)initWithCoder:(NSCoder *)coder {
-    if (self = [super initWithCoder:coder]) {
-        _demoArray = @[@"渐变按钮", @"时间戳处理", @"带占位TextView", @"隐藏导航栏", @"动态下载字体-学习自唐巧", @"屏幕适配"];
-    }
-    return self;
-}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _demoArray = @[@"渐变按钮", @"时间戳处理", @"带占位TextView", @"隐藏导航栏", @"动态下载字体-学习自唐巧", @"屏幕适配"];
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    [self.view addSubview:self.tableView];
 }
-
-
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

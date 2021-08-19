@@ -1,5 +1,5 @@
 //
-//  BKScreenAdapator.h
+//  YMScreenAdapator.h
 //  FengXingReadNew
 //
 //  Created by 白晗 on 2020/12/9.
@@ -10,10 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define BK_GET_STATUS_BAR_HEIGHT                    [BKScreenAdapator getStatusBarHeight]
-#define BK_GET_NAVIGATION_BAR_HEIGHT                [BKScreenAdapator getNavigationBarHeight]
-#define BK_GET_TAB_BAR_HEIGHT                       [BKScreenAdapator getTabBarHeight]
-#define BK_GET_BOTTOM_SAFE_AREA_HEIGHT              [BKScreenAdapator getBottomSafeAreaHeight]
+#define YM_GET_STATUS_BAR_HEIGHT                    [YMScreenAdapator getStatusBarHeight]
+#define YM_GET_NAVIGATION_BAR_HEIGHT                [YMScreenAdapator getNavigationBarHeight]
+#define YM_GET_TAB_BAR_HEIGHT                       [YMScreenAdapator getTabBarHeight]
+#define YM_GET_BOTTOM_SAFE_AREA_HEIGHT              [YMScreenAdapator getBottomSafeAreaHeight]
 
 /// 屏幕适配
 @interface YMScreenAdapator : NSObject

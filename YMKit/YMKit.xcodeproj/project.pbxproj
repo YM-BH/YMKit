@@ -14,10 +14,9 @@
 		E10DA997254A99D100A2740E /* TimestampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA996254A99D100A2740E /* TimestampViewController.m */; };
 		E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */; };
 		E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */; };
+		E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C4A126CE4033002E2A24 /* NavigationController.m */; };
 		E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37125481B7E00F8DA76 /* AppDelegate.m */; };
-		E1E0E37525481B7E00F8DA76 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37425481B7E00F8DA76 /* SceneDelegate.m */; };
 		E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37725481B7E00F8DA76 /* ViewController.m */; };
-		E1E0E37B25481B7E00F8DA76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37925481B7E00F8DA76 /* Main.storyboard */; };
 		E1E0E37D25481B7F00F8DA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */; };
 		E1E0E38025481B7F00F8DA76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */; };
 		E1E0E38325481B7F00F8DA76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E38225481B7F00F8DA76 /* main.m */; };
@@ -43,14 +42,13 @@
 		E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMScreenAdapator.m; sourceTree = "<group>"; };
 		E1A1C49D26CE0FE0002E2A24 /* ScreenAdapatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenAdapatorController.h; sourceTree = "<group>"; };
 		E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenAdapatorController.m; sourceTree = "<group>"; };
+		E1A1C4A026CE4033002E2A24 /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		E1A1C4A126CE4033002E2A24 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		E1E0E36D25481B7E00F8DA76 /* YMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E0E37025481B7E00F8DA76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1E0E37125481B7E00F8DA76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E1E0E37325481B7E00F8DA76 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		E1E0E37425481B7E00F8DA76 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		E1E0E37625481B7E00F8DA76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E1E0E37725481B7E00F8DA76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E1E0E37A25481B7E00F8DA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1E0E37F25481B7F00F8DA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1E0E38125481B7F00F8DA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,10 +129,10 @@
 				E1E0E38A25481BA300F8DA76 /* Categories */,
 				E1E0E37025481B7E00F8DA76 /* AppDelegate.h */,
 				E1E0E37125481B7E00F8DA76 /* AppDelegate.m */,
-				E1E0E37325481B7E00F8DA76 /* SceneDelegate.h */,
-				E1E0E37425481B7E00F8DA76 /* SceneDelegate.m */,
 				E1E0E37625481B7E00F8DA76 /* ViewController.h */,
 				E1E0E37725481B7E00F8DA76 /* ViewController.m */,
+				E1A1C4A026CE4033002E2A24 /* NavigationController.h */,
+				E1A1C4A126CE4033002E2A24 /* NavigationController.m */,
 				E1041139264A1A6E00CD1573 /* BaseViewController.h */,
 				E104113A264A1A6E00CD1573 /* BaseViewController.m */,
 				E10DA991254A988000A2740E /* GradientViewController.h */,
@@ -147,7 +145,6 @@
 				E1F9819B25B187D90023CD35 /* HiddenNavigationBarViewController.m */,
 				E1A1C49D26CE0FE0002E2A24 /* ScreenAdapatorController.h */,
 				E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */,
-				E1E0E37925481B7E00F8DA76 /* Main.storyboard */,
 				E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */,
 				E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */,
 				E1E0E38125481B7F00F8DA76 /* Info.plist */,
@@ -235,7 +232,6 @@
 			files = (
 				E1E0E38025481B7F00F8DA76 /* LaunchScreen.storyboard in Resources */,
 				E1E0E37D25481B7F00F8DA76 /* Assets.xcassets in Resources */,
-				E1E0E37B25481B7E00F8DA76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,11 +247,11 @@
 				E1041138264A19D800CD1573 /* DynamicDownloadFontViewController.m in Sources */,
 				E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */,
 				E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */,
+				E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */,
 				E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */,
 				E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */,
 				E1F9819C25B187D90023CD35 /* HiddenNavigationBarViewController.m in Sources */,
 				E1E0E38325481B7F00F8DA76 /* main.m in Sources */,
-				E1E0E37525481B7E00F8DA76 /* SceneDelegate.m in Sources */,
 				E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */,
 				E104113B264A1A6E00CD1573 /* BaseViewController.m in Sources */,
 				E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */,
@@ -268,14 +264,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E1E0E37925481B7E00F8DA76 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1E0E37A25481B7E00F8DA76 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

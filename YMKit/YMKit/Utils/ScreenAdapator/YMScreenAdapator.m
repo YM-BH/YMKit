@@ -6,62 +6,56 @@
 //  Copyright © 2020 Lazyload. All rights reserved.
 //
 
+
 #import "YMScreenAdapator.h"
 
-#define kModeSize                   [[UIScreen mainScreen] currentMode].size
+#define kModeSize [[UIScreen mainScreen] currentMode].size
+
+/// 导航条的高度
+static const CGFloat kNavigationBarHeight = 44;
+
+/// tabBar 的高度
+static const CGFloat kTabBarHeight = 49;
+
+/// 底部安全区域的高度
+static const CGFloat kBottomSafeAreaHeight = 34;
+
+/// 非刘海屏状态栏的高度
+static const CGFloat kNotBangScreenStatusBarHeight = 20;
 
 @implementation YMScreenAdapator
 
-/// 判断是否为iPhone12系列 除了iPhone12 mini
-+ (BOOL)isIphone12SeriesExcept12Mini {
-
-    BOOL isIphone12And12Pro = CGSizeEqualToSize(CGSizeMake(1170, 2532), kModeSize);
-    BOOL isIphone12ProMax = CGSizeEqualToSize(CGSizeMake(1284, 2778), kModeSize);
-    return isIphone12ProMax || isIphone12And12Pro;
-}
-
-+ (BOOL)isIphone11AndXR {
-    return CGSizeEqualToSize(CGSizeMake(828, 1792), kModeSize);
-}
-
-+ (BOOL)isOtherBangsScreen {
-    
-    return CGSizeEqualToSize(CGSizeMake(1242, 2688), kModeSize) || CGSizeEqualToSize(CGSizeMake(1125, 2436), kModeSize);
-}
-
+/**
+ *  状态栏各机型的高度
+ *  iPhone12 系列除了 iPhone12 mini 状态栏的高度是47
+ *  iPhone11 和 iPhone XR 状态栏高度是 48
+ *  其他带刘海的机型状态栏高度是 44
+ *  没有刘海的机型状态栏高度是 20
+ */
 + (CGFloat)getStatusBarHeight {
-    
-    if ([self isIphone12SeriesExcept12Mini]) {
-        return 47;
-    } else if ([self isIphone11AndXR]) {
-        return 48;
-    } else if ([self isOtherBangsScreen]) {
-        return 44;
+
+    if (@available(iOS 13.0, *)) {
+        UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager;
+        return statusBarManager.statusBarFrame.size.height;
+    } else {
+        return [UIApplication sharedApplication].statusBarFrame.size.height;
     }
-    return 20;
-    
 }
 
 + (CGFloat)getNavigationBarHeight {
-    
-    if ([self isIphone11AndXR] || [self isIphone12SeriesExcept12Mini] || [self isOtherBangsScreen]) {
-        return [self getStatusBarHeight] + 44;
-    }
-    
-    return 64;
-}
-
-+ (CGFloat)getTabBarHeight {
-    if ([self isIphone11AndXR] || [self isIphone12SeriesExcept12Mini] || [self isOtherBangsScreen]) {
-        return 83;
-    }
-    return 49;
+    return [self getStatusBarHeight] + kNavigationBarHeight;
 }
 
 + (CGFloat)getBottomSafeAreaHeight {
-    if ([self isIphone11AndXR] || [self isIphone12SeriesExcept12Mini] || [self isOtherBangsScreen]) {
-        return 34;
+    
+    if ([self getStatusBarHeight] == kNotBangScreenStatusBarHeight) { // 非刘海屏
+        return 0;
     }
-    return 0;
+    return kBottomSafeAreaHeight;
+}
+
++ (CGFloat)getTabBarHeight {
+    
+    return kTabBarHeight + [self getBottomSafeAreaHeight];
 }
 @end
