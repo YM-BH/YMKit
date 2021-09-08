@@ -12,6 +12,7 @@
 #import "HiddenNavigationBarController.h"
 #import "DynamicDownloadFontController.h"
 #import "ScreenAdapatorController.h"
+#import "AppInfoUtil.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;

@@ -15,6 +15,7 @@
 		E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */; };
 		E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */; };
 		E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C4A126CE4033002E2A24 /* NavigationController.m */; };
+		E1B99C2926E864C1005E4DFE /* AppInfoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C2826E864C1005E4DFE /* AppInfoUtil.m */; };
 		E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37125481B7E00F8DA76 /* AppDelegate.m */; };
 		E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37725481B7E00F8DA76 /* ViewController.m */; };
 		E1E0E37D25481B7F00F8DA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */; };
@@ -44,6 +45,8 @@
 		E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenAdapatorController.m; sourceTree = "<group>"; };
 		E1A1C4A026CE4033002E2A24 /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		E1A1C4A126CE4033002E2A24 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		E1B99C2726E864C1005E4DFE /* AppInfoUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfoUtil.h; sourceTree = "<group>"; };
+		E1B99C2826E864C1005E4DFE /* AppInfoUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoUtil.m; sourceTree = "<group>"; };
 		E1E0E36D25481B7E00F8DA76 /* YMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E0E37025481B7E00F8DA76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1E0E37125481B7E00F8DA76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		E1A1C49626CE0DC6002E2A24 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E1B99C2626E864A8005E4DFE /* AppInfo */,
 				E1A1C49726CE0DD2002E2A24 /* ScreenAdapator */,
 			);
 			path = Utils;
@@ -102,6 +106,15 @@
 				E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */,
 			);
 			path = ScreenAdapator;
+			sourceTree = "<group>";
+		};
+		E1B99C2626E864A8005E4DFE /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E1B99C2726E864C1005E4DFE /* AppInfoUtil.h */,
+				E1B99C2826E864C1005E4DFE /* AppInfoUtil.m */,
+			);
+			path = AppInfo;
 			sourceTree = "<group>";
 		};
 		E1E0E36425481B7E00F8DA76 = {
@@ -257,6 +270,7 @@
 				E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */,
 				E10DA997254A99D100A2740E /* TimestampController.m in Sources */,
 				E104113F264A1B0E00CD1573 /* Fonts.m in Sources */,
+				E1B99C2926E864C1005E4DFE /* AppInfoUtil.m in Sources */,
 				E1E28C8525551E7E00B84CC2 /* PlaceholderTextController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
