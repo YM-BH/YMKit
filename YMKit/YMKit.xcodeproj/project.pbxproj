@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */; };
 		E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C4A126CE4033002E2A24 /* NavigationController.m */; };
 		E1B99C2926E864C1005E4DFE /* AppInfoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C2826E864C1005E4DFE /* AppInfoUtil.m */; };
+		E1B99C6E26EB35A6005E4DFE /* LogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C6D26EB35A6005E4DFE /* LogUtil.m */; };
 		E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37125481B7E00F8DA76 /* AppDelegate.m */; };
 		E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37725481B7E00F8DA76 /* ViewController.m */; };
 		E1E0E37D25481B7F00F8DA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */; };
@@ -26,9 +27,13 @@
 		E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */; };
 		E1E28C8525551E7E00B84CC2 /* PlaceholderTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8425551E7E00B84CC2 /* PlaceholderTextController.m */; };
 		E1F9819C25B187D90023CD35 /* HiddenNavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F9819B25B187D90023CD35 /* HiddenNavigationBarController.m */; };
+		E501A066DDD16EF264A162DF /* Pods_YMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D756F855DEBF66F08EAA18 /* Pods_YMKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		764E47B45560C7B96A7BAAD0 /* Pods-YMKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMKit.debug.xcconfig"; path = "Target Support Files/Pods-YMKit/Pods-YMKit.debug.xcconfig"; sourceTree = "<group>"; };
+		AD14877E18B53DE676045715 /* Pods-YMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMKit.release.xcconfig"; path = "Target Support Files/Pods-YMKit/Pods-YMKit.release.xcconfig"; sourceTree = "<group>"; };
+		D1D756F855DEBF66F08EAA18 /* Pods_YMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1041136264A19D800CD1573 /* DynamicDownloadFontController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicDownloadFontController.h; sourceTree = "<group>"; };
 		E1041137264A19D800CD1573 /* DynamicDownloadFontController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicDownloadFontController.m; sourceTree = "<group>"; };
 		E1041139264A1A6E00CD1573 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -47,6 +52,8 @@
 		E1A1C4A126CE4033002E2A24 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		E1B99C2726E864C1005E4DFE /* AppInfoUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfoUtil.h; sourceTree = "<group>"; };
 		E1B99C2826E864C1005E4DFE /* AppInfoUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoUtil.m; sourceTree = "<group>"; };
+		E1B99C6C26EB35A6005E4DFE /* LogUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogUtil.h; sourceTree = "<group>"; };
+		E1B99C6D26EB35A6005E4DFE /* LogUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogUtil.m; sourceTree = "<group>"; };
 		E1E0E36D25481B7E00F8DA76 /* YMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E0E37025481B7E00F8DA76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1E0E37125481B7E00F8DA76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,12 +80,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E501A066DDD16EF264A162DF /* Pods_YMKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		402A0FEB41A5967ED3281F55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1D756F855DEBF66F08EAA18 /* Pods_YMKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A23376DD28CDB44F229180AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				764E47B45560C7B96A7BAAD0 /* Pods-YMKit.debug.xcconfig */,
+				AD14877E18B53DE676045715 /* Pods-YMKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E104113C264A1AE200CD1573 /* DynamicDownloadFont */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +118,7 @@
 		E1A1C49626CE0DC6002E2A24 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E1B99C6B26EB359A005E4DFE /* Log */,
 				E1B99C2626E864A8005E4DFE /* AppInfo */,
 				E1A1C49726CE0DD2002E2A24 /* ScreenAdapator */,
 			);
@@ -117,11 +143,22 @@
 			path = AppInfo;
 			sourceTree = "<group>";
 		};
+		E1B99C6B26EB359A005E4DFE /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				E1B99C6C26EB35A6005E4DFE /* LogUtil.h */,
+				E1B99C6D26EB35A6005E4DFE /* LogUtil.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 		E1E0E36425481B7E00F8DA76 = {
 			isa = PBXGroup;
 			children = (
 				E1E0E36F25481B7E00F8DA76 /* YMKit */,
 				E1E0E36E25481B7E00F8DA76 /* Products */,
+				A23376DD28CDB44F229180AE /* Pods */,
+				402A0FEB41A5967ED3281F55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1E0E38625481B7F00F8DA76 /* Build configuration list for PBXNativeTarget "YMKit" */;
 			buildPhases = (
+				95507883CA1777D7B1B503B2 /* [CP] Check Pods Manifest.lock */,
 				E1E0E36925481B7E00F8DA76 /* Sources */,
 				E1E0E36A25481B7E00F8DA76 /* Frameworks */,
 				E1E0E36B25481B7E00F8DA76 /* Resources */,
+				386FDD0EE58E7327D259DB9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +289,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		386FDD0EE58E7327D259DB9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YMKit/Pods-YMKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YMKit/Pods-YMKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YMKit/Pods-YMKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95507883CA1777D7B1B503B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YMKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1E0E36925481B7E00F8DA76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,6 +338,7 @@
 			files = (
 				E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */,
 				E10DA993254A988000A2740E /* GradientController.m in Sources */,
+				E1B99C6E26EB35A6005E4DFE /* LogUtil.m in Sources */,
 				E1041138264A19D800CD1573 /* DynamicDownloadFontController.m in Sources */,
 				E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */,
 				E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */,
@@ -403,6 +485,7 @@
 		};
 		E1E0E38725481B7F00F8DA76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 764E47B45560C7B96A7BAAD0 /* Pods-YMKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -425,6 +508,7 @@
 		};
 		E1E0E38825481B7F00F8DA76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD14877E18B53DE676045715 /* Pods-YMKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
