@@ -6,13 +6,10 @@
 //
 
 #import "ViewController.h"
-#import "GradientController.h"
-#import "TimestampController.h"
-#import "PlaceholderTextController.h"
-#import "HiddenNavigationBarController.h"
-#import "DynamicDownloadFontController.h"
-#import "ScreenAdapatorController.h"
 #import "AppInfoUtil.h"
+#import <YYKit/YYKit.h>
+#import "Module.h"
+
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -21,12 +18,34 @@
 
 @implementation ViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    _demoArray = @[@"渐变按钮", @"时间戳处理", @"带占位TextView", @"隐藏导航栏", @"动态下载字体-学习自唐巧", @"屏幕适配"];
-    
+
+    [self loadAllModules];
+
+    [self setupUI];
+}
+
+/// 加载所有功能模块
+- (void)loadAllModules {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"AllModules" ofType:@"plist"];
+
+    NSDictionary *rootDict = [NSDictionary dictionaryWithContentsOfFile:filePath];
+
+    // 字典转模型
+    NSMutableArray *dataSource = [NSMutableArray array];
+
+    for (NSDictionary *dict in rootDict[@"modules"]) {
+        Module *module = [Module modelWithDictionary:dict];
+        [dataSource addObject:module];
+    }
+
+    self.demoArray = [dataSource copy];
+    [self.tableView reloadData];
+
+}
+
+- (void)setupUI {
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -39,42 +58,29 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+
     NSString *const identifier = @"demoCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    
-    cell.textLabel.text = _demoArray[indexPath.row];
-    
+
+    Module *module = _demoArray[indexPath.row];
+
+    cell.textLabel.text = module.name;
+
     return cell;
-    
+
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    NSString *title = _demoArray[indexPath.row];
-    if ([title isEqualToString:@"渐变按钮"]) {
-        GradientController *gradientVc = [[GradientController alloc] init];
-        [self.navigationController pushViewController:gradientVc animated:YES];
-    } else if ([title isEqualToString:@"时间戳处理"]) {
-        TimestampController *timestampVc = [[TimestampController alloc] init];
-        [self.navigationController pushViewController:timestampVc animated:YES];
-    } else if ([title isEqualToString:@"带占位TextView"]) {
-        PlaceholderTextController *placeholderTextViewVc = [[PlaceholderTextController alloc] init];
-        [self.navigationController pushViewController:placeholderTextViewVc animated:YES];
-    } else if ([title isEqualToString:@"隐藏导航栏"]) {
-        HiddenNavigationBarController *hiddenNavVc = [[HiddenNavigationBarController alloc] init];
-        [self.navigationController pushViewController:hiddenNavVc animated:YES];
-    } else if ([title isEqualToString:@"动态下载字体-学习自唐巧"]) {
-        DynamicDownloadFontController *dynamicDownloadFontVc = [[DynamicDownloadFontController alloc] init];
-        [self.navigationController pushViewController:dynamicDownloadFontVc animated:YES];
-    } else if ([title isEqualToString:@"屏幕适配"]) {
-        ScreenAdapatorController *screenAdapatorVc = [[ScreenAdapatorController alloc] init];
-        [self.navigationController pushViewController:screenAdapatorVc animated:YES];
-    }
-}
+
+    Module *module = _demoArray[indexPath.row];
+    Class cls = NSClassFromString(module.controllerName);
+    UIViewController *vc = [[cls alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+} /* tableView */
 
 @end

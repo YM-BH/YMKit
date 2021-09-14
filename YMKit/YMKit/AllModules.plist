@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>modules</key>
+	<array>
+		<dict>
+			<key>controllerName</key>
+			<string>GradientController</string>
+			<key>type</key>
+			<integer>0</integer>
+			<key>name</key>
+			<string>渐变按钮</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>TimestampController</string>
+			<key>type</key>
+			<integer>1</integer>
+			<key>name</key>
+			<string>时间戳处理</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>PlaceholderTextController</string>
+			<key>type</key>
+			<integer>2</integer>
+			<key>name</key>
+			<string>带占位的textView</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>HiddenNavigationBarController</string>
+			<key>type</key>
+			<integer>3</integer>
+			<key>name</key>
+			<string>隐藏导航栏</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>DynamicDownloadFontController</string>
+			<key>type</key>
+			<integer>4</integer>
+			<key>name</key>
+			<string>动态下载字体-学习自唐巧</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>ScreenAdapatorController</string>
+			<key>type</key>
+			<integer>5</integer>
+			<key>name</key>
+			<string>屏幕适配</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>AppInfoController</string>
+			<key>type</key>
+			<integer>6</integer>
+			<key>name</key>
+			<string>App信息</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -17,6 +17,10 @@
 		E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C4A126CE4033002E2A24 /* NavigationController.m */; };
 		E1B99C2926E864C1005E4DFE /* AppInfoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C2826E864C1005E4DFE /* AppInfoUtil.m */; };
 		E1B99C6E26EB35A6005E4DFE /* LogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C6D26EB35A6005E4DFE /* LogUtil.m */; };
+		E1B99C7126F0487F005E4DFE /* AllModules.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1B99C7026F0487F005E4DFE /* AllModules.plist */; };
+		E1B99C7526F04B46005E4DFE /* PrintBeautifulLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C7426F04B46005E4DFE /* PrintBeautifulLog.m */; };
+		E1B99C7D26F04C91005E4DFE /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C7C26F04C91005E4DFE /* Module.m */; };
+		E1B99C8026F04FD6005E4DFE /* AppInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */; };
 		E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37125481B7E00F8DA76 /* AppDelegate.m */; };
 		E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37725481B7E00F8DA76 /* ViewController.m */; };
 		E1E0E37D25481B7F00F8DA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */; };
@@ -54,6 +58,13 @@
 		E1B99C2826E864C1005E4DFE /* AppInfoUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoUtil.m; sourceTree = "<group>"; };
 		E1B99C6C26EB35A6005E4DFE /* LogUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogUtil.h; sourceTree = "<group>"; };
 		E1B99C6D26EB35A6005E4DFE /* LogUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogUtil.m; sourceTree = "<group>"; };
+		E1B99C7026F0487F005E4DFE /* AllModules.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AllModules.plist; sourceTree = "<group>"; };
+		E1B99C7326F04B46005E4DFE /* PrintBeautifulLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintBeautifulLog.h; sourceTree = "<group>"; };
+		E1B99C7426F04B46005E4DFE /* PrintBeautifulLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintBeautifulLog.m; sourceTree = "<group>"; };
+		E1B99C7B26F04C91005E4DFE /* Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		E1B99C7C26F04C91005E4DFE /* Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
+		E1B99C7E26F04FD6005E4DFE /* AppInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfoController.h; sourceTree = "<group>"; };
+		E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoController.m; sourceTree = "<group>"; };
 		E1E0E36D25481B7E00F8DA76 /* YMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E0E37025481B7E00F8DA76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1E0E37125481B7E00F8DA76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +129,7 @@
 		E1A1C49626CE0DC6002E2A24 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E1B99C7226F04B36005E4DFE /* Print */,
 				E1B99C6B26EB359A005E4DFE /* Log */,
 				E1B99C2626E864A8005E4DFE /* AppInfo */,
 				E1A1C49726CE0DD2002E2A24 /* ScreenAdapator */,
@@ -152,6 +164,24 @@
 			path = Log;
 			sourceTree = "<group>";
 		};
+		E1B99C7226F04B36005E4DFE /* Print */ = {
+			isa = PBXGroup;
+			children = (
+				E1B99C7326F04B46005E4DFE /* PrintBeautifulLog.h */,
+				E1B99C7426F04B46005E4DFE /* PrintBeautifulLog.m */,
+			);
+			path = Print;
+			sourceTree = "<group>";
+		};
+		E1B99C7A26F04C77005E4DFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1B99C7B26F04C91005E4DFE /* Module.h */,
+				E1B99C7C26F04C91005E4DFE /* Module.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E1E0E36425481B7E00F8DA76 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +203,7 @@
 		E1E0E36F25481B7E00F8DA76 /* YMKit */ = {
 			isa = PBXGroup;
 			children = (
+				E1B99C7A26F04C77005E4DFE /* Models */,
 				E1A1C49626CE0DC6002E2A24 /* Utils */,
 				E104113C264A1AE200CD1573 /* DynamicDownloadFont */,
 				E1E28C7E25551D7300B84CC2 /* View */,
@@ -195,6 +226,9 @@
 				E1F9819B25B187D90023CD35 /* HiddenNavigationBarController.m */,
 				E1A1C49D26CE0FE0002E2A24 /* ScreenAdapatorController.h */,
 				E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */,
+				E1B99C7E26F04FD6005E4DFE /* AppInfoController.h */,
+				E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */,
+				E1B99C7026F0487F005E4DFE /* AllModules.plist */,
 				E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */,
 				E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */,
 				E1E0E38125481B7F00F8DA76 /* Info.plist */,
@@ -284,6 +318,7 @@
 			files = (
 				E1E0E38025481B7F00F8DA76 /* LaunchScreen.storyboard in Resources */,
 				E1E0E37D25481B7F00F8DA76 /* Assets.xcassets in Resources */,
+				E1B99C7126F0487F005E4DFE /* AllModules.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +383,13 @@
 				E1F9819C25B187D90023CD35 /* HiddenNavigationBarController.m in Sources */,
 				E1E0E38325481B7F00F8DA76 /* main.m in Sources */,
 				E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */,
+				E1B99C7526F04B46005E4DFE /* PrintBeautifulLog.m in Sources */,
 				E104113B264A1A6E00CD1573 /* BaseViewController.m in Sources */,
 				E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */,
 				E10DA997254A99D100A2740E /* TimestampController.m in Sources */,
 				E104113F264A1B0E00CD1573 /* Fonts.m in Sources */,
+				E1B99C7D26F04C91005E4DFE /* Module.m in Sources */,
+				E1B99C8026F04FD6005E4DFE /* AppInfoController.m in Sources */,
 				E1B99C2926E864C1005E4DFE /* AppInfoUtil.m in Sources */,
 				E1E28C8525551E7E00B84CC2 /* PlaceholderTextController.m in Sources */,
 			);
