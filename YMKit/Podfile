@@ -11,5 +11,6 @@ target 'YMKit' do
 
   pod 'CocoaLumberjack'
   pod 'YYKit'
+  pod 'Masonry'
 
 end

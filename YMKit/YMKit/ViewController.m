@@ -80,6 +80,7 @@
     Module *module = _demoArray[indexPath.row];
     Class cls = NSClassFromString(module.controllerName);
     UIViewController *vc = [[cls alloc] init];
+    vc.title = module.name;
     [self.navigationController pushViewController:vc animated:YES];
 } /* tableView */
 

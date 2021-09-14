@@ -21,6 +21,7 @@
 		E1B99C7526F04B46005E4DFE /* PrintBeautifulLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C7426F04B46005E4DFE /* PrintBeautifulLog.m */; };
 		E1B99C7D26F04C91005E4DFE /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C7C26F04C91005E4DFE /* Module.m */; };
 		E1B99C8026F04FD6005E4DFE /* AppInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */; };
+		E1B99C8326F07152005E4DFE /* AppInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C8226F07152005E4DFE /* AppInfoCell.m */; };
 		E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37125481B7E00F8DA76 /* AppDelegate.m */; };
 		E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37725481B7E00F8DA76 /* ViewController.m */; };
 		E1E0E37D25481B7F00F8DA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */; };
@@ -65,6 +66,8 @@
 		E1B99C7C26F04C91005E4DFE /* Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
 		E1B99C7E26F04FD6005E4DFE /* AppInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfoController.h; sourceTree = "<group>"; };
 		E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoController.m; sourceTree = "<group>"; };
+		E1B99C8126F07152005E4DFE /* AppInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfoCell.h; sourceTree = "<group>"; };
+		E1B99C8226F07152005E4DFE /* AppInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoCell.m; sourceTree = "<group>"; };
 		E1E0E36D25481B7E00F8DA76 /* YMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E0E37025481B7E00F8DA76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1E0E37125481B7E00F8DA76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 				E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */,
 				E1B99C7E26F04FD6005E4DFE /* AppInfoController.h */,
 				E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */,
+				E1B99C8126F07152005E4DFE /* AppInfoCell.h */,
+				E1B99C8226F07152005E4DFE /* AppInfoCell.m */,
 				E1B99C7026F0487F005E4DFE /* AllModules.plist */,
 				E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */,
 				E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */,
@@ -376,6 +381,7 @@
 				E1B99C6E26EB35A6005E4DFE /* LogUtil.m in Sources */,
 				E1041138264A19D800CD1573 /* DynamicDownloadFontController.m in Sources */,
 				E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */,
+				E1B99C8326F07152005E4DFE /* AppInfoCell.m in Sources */,
 				E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */,
 				E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */,
 				E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */,
