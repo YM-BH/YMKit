@@ -7,6 +7,7 @@
 
 #import "GradientController.h"
 #import "UIButton+YMExtension.h"
+#import "UIViewController+BHExtension.h"
 
 @interface GradientController ()
 
@@ -30,7 +31,8 @@
 }
 
 - (void)btnClick:(UIButton *)button {
-    NSLog(@"点击了按钮");
+    
+    [self bh_showAlertStyleWithTitle:@"提示" message:@"点击了按钮" rightActionTitle:nil leftActionTitle:@"确定" rightActionCompletion:nil leftActionCompletion:nil];
 }
 
 @end
