@@ -11,7 +11,7 @@
 typedef void(^AlertActionBlock)(void);
 typedef void(^ActionSheetActionBlock)(UIAlertAction *action);
 
-@interface UIViewController (BHExtension)
+@interface UIViewController (YMExtension)
 
 /// 展示系统的 alert
 - (void)bh_showAlertStyleWithTitle:(NSString *)title message:(NSString *)message rightActionTitle:(NSString *)rightActionTitle leftActionTitle:(NSString *)leftActionTitle rightActionCompletion:(AlertActionBlock)rightActionCompletion leftActionCompletion:(AlertActionBlock)leftActionCompletion;

@@ -7,7 +7,7 @@
 
 #import "GradientController.h"
 #import "UIButton+YMExtension.h"
-#import "UIViewController+BHExtension.h"
+#import "UIViewController+YMExtension.h"
 
 @interface GradientController ()
 

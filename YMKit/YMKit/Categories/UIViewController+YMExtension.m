@@ -6,9 +6,9 @@
 //  Copyright © 2019 Lazyload. All rights reserved.
 //
 
-#import "UIViewController+BHExtension.h"
+#import "UIViewController+YMExtension.h"
 
-@implementation UIViewController (BHExtension)
+@implementation UIViewController (YMExtension)
 - (void)bh_showAlertStyleWithTitle:(NSString *)title message:(NSString *)message rightActionTitle:(NSString *)rightActionTitle leftActionTitle:(NSString *)leftActionTitle rightActionCompletion:(AlertActionBlock)rightActionCompletion leftActionCompletion:(AlertActionBlock)leftActionCompletion {
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];

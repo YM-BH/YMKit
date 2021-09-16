@@ -22,7 +22,7 @@
 		E1B99C7D26F04C91005E4DFE /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C7C26F04C91005E4DFE /* Module.m */; };
 		E1B99C8026F04FD6005E4DFE /* AppInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */; };
 		E1B99C8326F07152005E4DFE /* AppInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C8226F07152005E4DFE /* AppInfoCell.m */; };
-		E1B99C8626F1A574005E4DFE /* UIViewController+BHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C8426F1A574005E4DFE /* UIViewController+BHExtension.m */; };
+		E1B99C8626F1A574005E4DFE /* UIViewController+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B99C8426F1A574005E4DFE /* UIViewController+YMExtension.m */; };
 		E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37125481B7E00F8DA76 /* AppDelegate.m */; };
 		E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E37725481B7E00F8DA76 /* ViewController.m */; };
 		E1E0E37D25481B7F00F8DA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */; };
@@ -69,8 +69,8 @@
 		E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoController.m; sourceTree = "<group>"; };
 		E1B99C8126F07152005E4DFE /* AppInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfoCell.h; sourceTree = "<group>"; };
 		E1B99C8226F07152005E4DFE /* AppInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoCell.m; sourceTree = "<group>"; };
-		E1B99C8426F1A574005E4DFE /* UIViewController+BHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BHExtension.m"; sourceTree = "<group>"; };
-		E1B99C8526F1A574005E4DFE /* UIViewController+BHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BHExtension.h"; sourceTree = "<group>"; };
+		E1B99C8426F1A574005E4DFE /* UIViewController+YMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YMExtension.m"; sourceTree = "<group>"; };
+		E1B99C8526F1A574005E4DFE /* UIViewController+YMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YMExtension.h"; sourceTree = "<group>"; };
 		E1E0E36D25481B7E00F8DA76 /* YMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E0E37025481B7E00F8DA76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1E0E37125481B7E00F8DA76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -252,8 +252,8 @@
 				E1E0E38B25481BCB00F8DA76 /* UIButton+YMExtension.m */,
 				E1E0E3922548201C00F8DA76 /* NSString+YMExtension.h */,
 				E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */,
-				E1B99C8526F1A574005E4DFE /* UIViewController+BHExtension.h */,
-				E1B99C8426F1A574005E4DFE /* UIViewController+BHExtension.m */,
+				E1B99C8526F1A574005E4DFE /* UIViewController+YMExtension.h */,
+				E1B99C8426F1A574005E4DFE /* UIViewController+YMExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -393,7 +393,7 @@
 				E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */,
 				E1F9819C25B187D90023CD35 /* HiddenNavigationBarController.m in Sources */,
 				E1E0E38325481B7F00F8DA76 /* main.m in Sources */,
-				E1B99C8626F1A574005E4DFE /* UIViewController+BHExtension.m in Sources */,
+				E1B99C8626F1A574005E4DFE /* UIViewController+YMExtension.m in Sources */,
 				E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */,
 				E1B99C7526F04B46005E4DFE /* PrintBeautifulLog.m in Sources */,
 				E104113B264A1A6E00CD1573 /* BaseViewController.m in Sources */,
