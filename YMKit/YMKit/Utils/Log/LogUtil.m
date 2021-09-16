@@ -9,4 +9,8 @@
 
 @implementation LogUtil
 
++ (void)initialize {
+    
+}
+
 @end

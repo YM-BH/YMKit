@@ -18,6 +18,7 @@
 
 /// 设置渐变色
 - (void)_setGradientColorWithStartPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint colors:(NSArray<UIColor *> *)colors {
+    
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
     gradientLayer.frame = self.bounds;
     // 将UIColor -> CGColor

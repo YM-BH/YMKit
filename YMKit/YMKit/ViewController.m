@@ -82,6 +82,7 @@
     UIViewController *vc = [[cls alloc] init];
     vc.title = module.name;
     [self.navigationController pushViewController:vc animated:YES];
+    
 } /* tableView */
 
 @end
