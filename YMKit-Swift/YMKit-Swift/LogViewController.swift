@@ -18,6 +18,6 @@ class LogViewController: BaseViewController {
     }
     
     private func setupUI() {
-        
+
     }
 }
