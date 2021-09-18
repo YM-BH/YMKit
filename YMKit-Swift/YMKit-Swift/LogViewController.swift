@@ -15,6 +15,9 @@ class LogViewController: BaseViewController {
         super.viewDidLoad()
         
         setupUI()
+        
+        printLog(Double.ANIMATION_DURATION)
+        printLog(Double.TIME_INTERVAL)
 
     }
     
@@ -35,6 +38,8 @@ class LogViewController: BaseViewController {
             空方法的时候，会直接将这个方法去掉。
             """
         contentLabel.numberOfLines = 0
+        contentLabel.textColor = UIColor.THEME_COLOR
+        contentLabel.font = UIFont.setSystemFont(14)
         view.addSubview(contentLabel)
         
         contentLabel.snp.makeConstraints { make in

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		E1B99D1526F47240005E4DFE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B99D1426F47240005E4DFE /* BaseViewController.swift */; };
 		E1B99D1726F47260005E4DFE /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B99D1626F47260005E4DFE /* LogViewController.swift */; };
 		E1B99D1B26F48AFA005E4DFE /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B99D1A26F48AFA005E4DFE /* Log.swift */; };
+		E1B99D1D26F5B5A8005E4DFE /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B99D1C26F5B5A7005E4DFE /* Macro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E1B99D1426F47240005E4DFE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E1B99D1626F47260005E4DFE /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		E1B99D1A26F48AFA005E4DFE /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		E1B99D1C26F5B5A7005E4DFE /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,6 @@
 				9C4B8E8E6A607B445E3809C2 /* Pods-YMKit-Swift.debug.xcconfig */,
 				AFBC60BD536474ABF15FF9BD /* Pods-YMKit-Swift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +89,7 @@
 				E1B99CFE26F46C57005E4DFE /* AppDelegate.swift */,
 				E1B99D0226F46C57005E4DFE /* ViewController.swift */,
 				E1B99D1A26F48AFA005E4DFE /* Log.swift */,
+				E1B99D1C26F5B5A7005E4DFE /* Macro.swift */,
 				E1B99D1226F46D2B005E4DFE /* NavigationController.swift */,
 				E1B99D1426F47240005E4DFE /* BaseViewController.swift */,
 				E1B99D1626F47260005E4DFE /* LogViewController.swift */,
@@ -212,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B99D0326F46C57005E4DFE /* ViewController.swift in Sources */,
+				E1B99D1D26F5B5A8005E4DFE /* Macro.swift in Sources */,
 				E1B99D1726F47260005E4DFE /* LogViewController.swift in Sources */,
 				E1B99D1B26F48AFA005E4DFE /* Log.swift in Sources */,
 				E1B99D1526F47240005E4DFE /* BaseViewController.swift in Sources */,
