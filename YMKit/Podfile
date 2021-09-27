@@ -12,5 +12,6 @@ target 'YMKit' do
   pod 'CocoaLumberjack'
   pod 'YYKit'
   pod 'Masonry'
+  pod 'SDWebImage'
 
 end
