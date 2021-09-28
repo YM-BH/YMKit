@@ -60,6 +60,14 @@
 			<key>name</key>
 			<string>App信息</string>
 		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>SDWebImageViewController</string>
+			<key>type</key>
+			<integer>7</integer>
+			<key>name</key>
+			<string>SDWebImageView</string>
+		</dict>
 	</array>
 </dict>
 </plist>

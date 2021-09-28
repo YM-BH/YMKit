@@ -10,8 +10,10 @@
 		E1041138264A19D800CD1573 /* DynamicDownloadFontController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1041137264A19D800CD1573 /* DynamicDownloadFontController.m */; };
 		E104113B264A1A6E00CD1573 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E104113A264A1A6E00CD1573 /* BaseViewController.m */; };
 		E104113F264A1B0E00CD1573 /* Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = E104113E264A1B0E00CD1573 /* Fonts.m */; };
+		E10B0EB72701C68B00A354D1 /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B0EB62701C68B00A354D1 /* SDWebImageViewController.m */; };
 		E10DA993254A988000A2740E /* GradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA992254A988000A2740E /* GradientController.m */; };
 		E10DA997254A99D100A2740E /* TimestampController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA996254A99D100A2740E /* TimestampController.m */; };
+		E187025E2702A87F000C1FF0 /* Pods_YMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187025D2702A87F000C1FF0 /* Pods_YMKit.framework */; };
 		E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */; };
 		E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */; };
 		E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C4A126CE4033002E2A24 /* NavigationController.m */; };
@@ -34,7 +36,6 @@
 		E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */; };
 		E1E28C8525551E7E00B84CC2 /* PlaceholderTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8425551E7E00B84CC2 /* PlaceholderTextController.m */; };
 		E1F9819C25B187D90023CD35 /* HiddenNavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F9819B25B187D90023CD35 /* HiddenNavigationBarController.m */; };
-		E501A066DDD16EF264A162DF /* Pods_YMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D756F855DEBF66F08EAA18 /* Pods_YMKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,10 +48,14 @@
 		E104113A264A1A6E00CD1573 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E104113D264A1B0E00CD1573 /* Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fonts.h; sourceTree = "<group>"; };
 		E104113E264A1B0E00CD1573 /* Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fonts.m; sourceTree = "<group>"; };
+		E10B0EB52701C68B00A354D1 /* SDWebImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageViewController.h; sourceTree = "<group>"; };
+		E10B0EB62701C68B00A354D1 /* SDWebImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageViewController.m; sourceTree = "<group>"; };
 		E10DA991254A988000A2740E /* GradientController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientController.h; sourceTree = "<group>"; };
 		E10DA992254A988000A2740E /* GradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientController.m; sourceTree = "<group>"; };
 		E10DA995254A99D100A2740E /* TimestampController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimestampController.h; sourceTree = "<group>"; };
 		E10DA996254A99D100A2740E /* TimestampController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimestampController.m; sourceTree = "<group>"; };
+		E187025B2702A841000C1FF0 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E187025D2702A87F000C1FF0 /* Pods_YMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_YMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A1C49826CE0DE5002E2A24 /* YMScreenAdapator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMScreenAdapator.h; sourceTree = "<group>"; };
 		E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMScreenAdapator.m; sourceTree = "<group>"; };
 		E1A1C49D26CE0FE0002E2A24 /* ScreenAdapatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenAdapatorController.h; sourceTree = "<group>"; };
@@ -100,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E501A066DDD16EF264A162DF /* Pods_YMKit.framework in Frameworks */,
+				E187025E2702A87F000C1FF0 /* Pods_YMKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +115,8 @@
 		402A0FEB41A5967ED3281F55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E187025D2702A87F000C1FF0 /* Pods_YMKit.framework */,
+				E187025B2702A841000C1FF0 /* Masonry.framework */,
 				D1D756F855DEBF66F08EAA18 /* Pods_YMKit.framework */,
 			);
 			name = Frameworks;
@@ -235,6 +242,8 @@
 				E1F9819B25B187D90023CD35 /* HiddenNavigationBarController.m */,
 				E1A1C49D26CE0FE0002E2A24 /* ScreenAdapatorController.h */,
 				E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */,
+				E10B0EB52701C68B00A354D1 /* SDWebImageViewController.h */,
+				E10B0EB62701C68B00A354D1 /* SDWebImageViewController.m */,
 				E1B99C7E26F04FD6005E4DFE /* AppInfoController.h */,
 				E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */,
 				E1B99C8126F07152005E4DFE /* AppInfoCell.h */,
@@ -300,7 +309,7 @@
 		E1E0E36525481B7E00F8DA76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					E1E0E36C25481B7E00F8DA76 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -387,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */,
+				E10B0EB72701C68B00A354D1 /* SDWebImageViewController.m in Sources */,
 				E10DA993254A988000A2740E /* GradientController.m in Sources */,
 				E1B99C6E26EB35A6005E4DFE /* LogUtil.m in Sources */,
 				E1041138264A19D800CD1573 /* DynamicDownloadFontController.m in Sources */,
@@ -464,6 +474,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -478,11 +489,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -523,6 +537,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -531,10 +546,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -549,8 +567,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = T82F5774XJ;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
+				);
 				INFOPLIST_FILE = YMKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,6 +586,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -574,8 +600,15 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
+				);
 				INFOPLIST_FILE = YMKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,6 +618,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
