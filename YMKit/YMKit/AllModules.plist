@@ -10,7 +10,7 @@
 			<key>type</key>
 			<integer>0</integer>
 			<key>name</key>
-			<string>渐变按钮</string>
+			<string>渐变视图</string>
 		</dict>
 		<dict>
 			<key>controllerName</key>

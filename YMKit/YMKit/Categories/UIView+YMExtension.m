@@ -1,13 +1,14 @@
 //
-//  UIView+Extension.m
-//  Gradient
+//  UIView+YMExtension.m
+//  YMKit
 //
-//  Created by 白晗 on 2020/10/27.
+//  Created by 白晗 on 2021/9/28.
 //
 
-#import "UIButton+YMExtension.h"
+#import "UIView+YMExtension.h"
 
-@implementation UIButton (Extension)
+@implementation UIView (YMExtension)
+
 - (void)ym_setGradientColorFromLeftToRightWithColors:(NSArray<UIColor *> *)colors {
     [self _setGradientColorWithStartPoint:CGPointMake(0, 0.5) endPoint:CGPointMake(1.0, 0.5) colors:colors];
 }

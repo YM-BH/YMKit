@@ -1,15 +1,15 @@
 //
-//  UIView+Extension.h
-//  Gradient
+//  UIView+YMExtension.h
+//  YMKit
 //
-//  Created by 白晗 on 2020/10/27.
+//  Created by 白晗 on 2021/9/28.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIButton (Extension)
+@interface UIView (YMExtension)
 
 /// 设置从左到右渐变色
 /// @param colors 颜色数组

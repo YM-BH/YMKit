@@ -13,6 +13,7 @@
 		E10B0EB72701C68B00A354D1 /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B0EB62701C68B00A354D1 /* SDWebImageViewController.m */; };
 		E10DA993254A988000A2740E /* GradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA992254A988000A2740E /* GradientController.m */; };
 		E10DA997254A99D100A2740E /* TimestampController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA996254A99D100A2740E /* TimestampController.m */; };
+		E13F45312702C49B00D1B93E /* UIView+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F45302702C49B00D1B93E /* UIView+YMExtension.m */; };
 		E187025E2702A87F000C1FF0 /* Pods_YMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187025D2702A87F000C1FF0 /* Pods_YMKit.framework */; };
 		E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */; };
 		E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */; };
@@ -31,7 +32,6 @@
 		E1E0E37D25481B7F00F8DA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */; };
 		E1E0E38025481B7F00F8DA76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */; };
 		E1E0E38325481B7F00F8DA76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E38225481B7F00F8DA76 /* main.m */; };
-		E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E38B25481BCB00F8DA76 /* UIButton+YMExtension.m */; };
 		E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */; };
 		E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */; };
 		E1E28C8525551E7E00B84CC2 /* PlaceholderTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E28C8425551E7E00B84CC2 /* PlaceholderTextController.m */; };
@@ -54,6 +54,8 @@
 		E10DA992254A988000A2740E /* GradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientController.m; sourceTree = "<group>"; };
 		E10DA995254A99D100A2740E /* TimestampController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimestampController.h; sourceTree = "<group>"; };
 		E10DA996254A99D100A2740E /* TimestampController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimestampController.m; sourceTree = "<group>"; };
+		E13F452F2702C49B00D1B93E /* UIView+YMExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YMExtension.h"; sourceTree = "<group>"; };
+		E13F45302702C49B00D1B93E /* UIView+YMExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YMExtension.m"; sourceTree = "<group>"; };
 		E187025B2702A841000C1FF0 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E187025D2702A87F000C1FF0 /* Pods_YMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_YMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A1C49826CE0DE5002E2A24 /* YMScreenAdapator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMScreenAdapator.h; sourceTree = "<group>"; };
@@ -88,8 +90,6 @@
 		E1E0E37F25481B7F00F8DA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1E0E38125481B7F00F8DA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1E0E38225481B7F00F8DA76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E1E0E38B25481BCB00F8DA76 /* UIButton+YMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YMExtension.m"; sourceTree = "<group>"; };
-		E1E0E38C25481BCC00F8DA76 /* UIButton+YMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YMExtension.h"; sourceTree = "<group>"; };
 		E1E0E3922548201C00F8DA76 /* NSString+YMExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YMExtension.h"; sourceTree = "<group>"; };
 		E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YMExtension.m"; sourceTree = "<group>"; };
 		E1E28C7F25551E3700B84CC2 /* YMPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPlaceholderTextView.h; sourceTree = "<group>"; };
@@ -260,8 +260,8 @@
 		E1E0E38A25481BA300F8DA76 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				E1E0E38C25481BCC00F8DA76 /* UIButton+YMExtension.h */,
-				E1E0E38B25481BCB00F8DA76 /* UIButton+YMExtension.m */,
+				E13F452F2702C49B00D1B93E /* UIView+YMExtension.h */,
+				E13F45302702C49B00D1B93E /* UIView+YMExtension.m */,
 				E1E0E3922548201C00F8DA76 /* NSString+YMExtension.h */,
 				E1E0E3932548201C00F8DA76 /* NSString+YMExtension.m */,
 				E1B99C8526F1A574005E4DFE /* UIViewController+YMExtension.h */,
@@ -397,6 +397,7 @@
 			files = (
 				E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */,
 				E10B0EB72701C68B00A354D1 /* SDWebImageViewController.m in Sources */,
+				E13F45312702C49B00D1B93E /* UIView+YMExtension.m in Sources */,
 				E10DA993254A988000A2740E /* GradientController.m in Sources */,
 				E1B99C6E26EB35A6005E4DFE /* LogUtil.m in Sources */,
 				E1041138264A19D800CD1573 /* DynamicDownloadFontController.m in Sources */,
@@ -409,7 +410,6 @@
 				E1F9819C25B187D90023CD35 /* HiddenNavigationBarController.m in Sources */,
 				E1E0E38325481B7F00F8DA76 /* main.m in Sources */,
 				E1B99C8626F1A574005E4DFE /* UIViewController+YMExtension.m in Sources */,
-				E1E0E38D25481BCC00F8DA76 /* UIButton+YMExtension.m in Sources */,
 				E1B99C7526F04B46005E4DFE /* PrintBeautifulLog.m in Sources */,
 				E104113B264A1A6E00CD1573 /* BaseViewController.m in Sources */,
 				E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */,
