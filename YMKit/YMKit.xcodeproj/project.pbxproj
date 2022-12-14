@@ -16,6 +16,8 @@
 		E13F45312702C49B00D1B93E /* UIView+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F45302702C49B00D1B93E /* UIView+YMExtension.m */; };
 		E1420B9B27632A830062A1E3 /* CommentToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1420B9A27632A830062A1E3 /* CommentToolbarController.m */; };
 		E187025E2702A87F000C1FF0 /* Pods_YMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187025D2702A87F000C1FF0 /* Pods_YMKit.framework */; };
+		E187826D2949AA620046BEAD /* TextAmplifierController.m in Sources */ = {isa = PBXBuildFile; fileRef = E187826C2949AA620046BEAD /* TextAmplifierController.m */; };
+		E18782702949AAB60046BEAD /* YMTextAmplifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E187826F2949AAB60046BEAD /* YMTextAmplifier.m */; };
 		E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */; };
 		E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */; };
 		E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C4A126CE4033002E2A24 /* NavigationController.m */; };
@@ -61,6 +63,10 @@
 		E1420B9A27632A830062A1E3 /* CommentToolbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentToolbarController.m; sourceTree = "<group>"; };
 		E187025B2702A841000C1FF0 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E187025D2702A87F000C1FF0 /* Pods_YMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_YMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E187826B2949AA620046BEAD /* TextAmplifierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextAmplifierController.h; sourceTree = "<group>"; };
+		E187826C2949AA620046BEAD /* TextAmplifierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextAmplifierController.m; sourceTree = "<group>"; };
+		E187826E2949AAB60046BEAD /* YMTextAmplifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMTextAmplifier.h; sourceTree = "<group>"; };
+		E187826F2949AAB60046BEAD /* YMTextAmplifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMTextAmplifier.m; sourceTree = "<group>"; };
 		E1A1C49826CE0DE5002E2A24 /* YMScreenAdapator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMScreenAdapator.h; sourceTree = "<group>"; };
 		E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMScreenAdapator.m; sourceTree = "<group>"; };
 		E1A1C49D26CE0FE0002E2A24 /* ScreenAdapatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenAdapatorController.h; sourceTree = "<group>"; };
@@ -196,6 +202,17 @@
 			path = PlaceholderTextView;
 			sourceTree = "<group>";
 		};
+		E187826A2949AA150046BEAD /* TextAmplifier */ = {
+			isa = PBXGroup;
+			children = (
+				E187826B2949AA620046BEAD /* TextAmplifierController.h */,
+				E187826C2949AA620046BEAD /* TextAmplifierController.m */,
+				E187826E2949AAB60046BEAD /* YMTextAmplifier.h */,
+				E187826F2949AAB60046BEAD /* YMTextAmplifier.m */,
+			);
+			path = TextAmplifier;
+			sourceTree = "<group>";
+		};
 		E1A1C49626CE0DC6002E2A24 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +290,7 @@
 		E1E0E36F25481B7E00F8DA76 /* YMKit */ = {
 			isa = PBXGroup;
 			children = (
+				E187826A2949AA150046BEAD /* TextAmplifier */,
 				E18782692949A9370046BEAD /* PlaceholderTextView */,
 				E18782682949A91C0046BEAD /* ScreenAdaptor */,
 				E18782672949A8C10046BEAD /* Timestamp */,
@@ -440,6 +458,7 @@
 				E1041138264A19D800CD1573 /* DynamicDownloadFontController.m in Sources */,
 				E1E0E37825481B7E00F8DA76 /* ViewController.m in Sources */,
 				E1B99C8326F07152005E4DFE /* AppInfoCell.m in Sources */,
+				E18782702949AAB60046BEAD /* YMTextAmplifier.m in Sources */,
 				E1E28C8125551E3700B84CC2 /* YMPlaceholderTextView.m in Sources */,
 				E1A1C4A226CE4033002E2A24 /* NavigationController.m in Sources */,
 				E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */,
@@ -451,6 +470,7 @@
 				E1B99C7526F04B46005E4DFE /* PrintBeautifulLog.m in Sources */,
 				E104113B264A1A6E00CD1573 /* BaseViewController.m in Sources */,
 				E1E0E3942548201C00F8DA76 /* NSString+YMExtension.m in Sources */,
+				E187826D2949AA620046BEAD /* TextAmplifierController.m in Sources */,
 				E10DA997254A99D100A2740E /* TimestampController.m in Sources */,
 				E104113F264A1B0E00CD1573 /* Fonts.m in Sources */,
 				E1B99C7D26F04C91005E4DFE /* Module.m in Sources */,

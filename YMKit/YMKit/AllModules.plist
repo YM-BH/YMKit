@@ -76,6 +76,14 @@
 			<key>name</key>
 			<string>评论条</string>
 		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>TextAmplifierController</string>
+			<key>type</key>
+			<integer>9</integer>
+			<key>name</key>
+			<string>文字放大器</string>
+		</dict>
 	</array>
 </dict>
 </plist>
