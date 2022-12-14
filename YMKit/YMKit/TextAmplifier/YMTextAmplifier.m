@@ -37,12 +37,12 @@
     [self.containerView addGestureRecognizer:tapRecognizer];
 
     self.contentLabel = [[UILabel alloc] init];
-    self.contentLabel.backgroundColor = [UIColor orangeColor];
+    self.contentLabel.backgroundColor = [UIColor clearColor];
     self.contentLabel.numberOfLines = 0;
     [self.containerView addSubview:self.contentLabel];
 
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-
+    // 设置行间距
     paragraphStyle.lineSpacing = 15;
 
     NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:self.content];
@@ -57,12 +57,6 @@
     CGFloat topMargin = 63;
     CGFloat width = self.view.bounds.size.width - leftMargin * 2;
     CGFloat textHeight = [self getStringSizeWithAttString:attString size:CGSizeMake(width, MAXFLOAT)].height;
-//    CGFloat textWidth = [self getStringSizeWithAttString:attString size:CGSizeMake(MAXFLOAT, textHeight)].width;
-//    CGFloat top = (self.view.bounds.size.height - textHeight) > 0 ? (self.view.bounds.size.height - textHeight) * 0.5 : topMargin;
-//    CGFloat left = (self.view.bounds.size.width - textWidth) > 0 ? (self.view.bounds.size.width - textWidth) * 0.5 : leftMargin;
-
-//    self.contentLabel.frame = CGRectMake(left, top, width, textHeight);
-    
     // 获取文字高度和屏幕高度的差值
     CGFloat deltaY = (self.view.bounds.size.height - textHeight) * 0.5;
     
@@ -101,7 +95,7 @@
 }
 
 - (void)dealloc {
-
+    NSLog(@"文字放大器销毁");
 }
 
 @end
