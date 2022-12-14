@@ -19,10 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YMScreenAdapator : NSObject
 /// 获取状态栏高度
 + (CGFloat)getStatusBarHeight;
+
 /// 获取导航条高度
 + (CGFloat)getNavigationBarHeight;
+
 /// 获取 TabBar 高度
 + (CGFloat)getTabBarHeight;
+
 /// 获取底部安全区高度
 + (CGFloat)getBottomSafeAreaHeight;
 

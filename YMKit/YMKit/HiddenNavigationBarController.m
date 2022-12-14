@@ -49,7 +49,6 @@
 - (void)setUpNavView {
     // 获取状态栏高度
     CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
-//    NSLog(@"%f", statusBarHeight);
     
     self.navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, statusBarHeight + 44)];
     _navView.alpha = 0;

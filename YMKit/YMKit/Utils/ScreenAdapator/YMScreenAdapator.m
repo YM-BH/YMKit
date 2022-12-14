@@ -6,10 +6,7 @@
 //  Copyright © 2020 Lazyload. All rights reserved.
 //
 
-
 #import "YMScreenAdapator.h"
-
-#define kModeSize [[UIScreen mainScreen] currentMode].size
 
 /// 导航条的高度
 static const CGFloat kNavigationBarHeight = 44;
@@ -55,7 +52,6 @@ static const CGFloat kNotBangScreenStatusBarHeight = 20;
 }
 
 + (CGFloat)getTabBarHeight {
-    
     return kTabBarHeight + [self getBottomSafeAreaHeight];
 }
 @end

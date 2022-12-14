@@ -9,7 +9,9 @@
 
 @implementation UIImage (YMExtension)
 
+/// 将图片置灰
 - (UIImage *)ym_grayImage:(UIImage *)image {
+    
     int bitmapInfo = kCGImageAlphaNone;
     int width = image.size.width;
     int height = image.size.height;

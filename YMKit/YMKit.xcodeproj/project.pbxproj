@@ -156,6 +156,46 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		E18782662949A89F0046BEAD /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E1B99C7E26F04FD6005E4DFE /* AppInfoController.h */,
+				E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */,
+				E1B99C8126F07152005E4DFE /* AppInfoCell.h */,
+				E1B99C8226F07152005E4DFE /* AppInfoCell.m */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
+		E18782672949A8C10046BEAD /* Timestamp */ = {
+			isa = PBXGroup;
+			children = (
+				E10DA995254A99D100A2740E /* TimestampController.h */,
+				E10DA996254A99D100A2740E /* TimestampController.m */,
+			);
+			path = Timestamp;
+			sourceTree = "<group>";
+		};
+		E18782682949A91C0046BEAD /* ScreenAdaptor */ = {
+			isa = PBXGroup;
+			children = (
+				E1A1C49D26CE0FE0002E2A24 /* ScreenAdapatorController.h */,
+				E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */,
+			);
+			path = ScreenAdaptor;
+			sourceTree = "<group>";
+		};
+		E18782692949A9370046BEAD /* PlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				E1E28C7F25551E3700B84CC2 /* YMPlaceholderTextView.h */,
+				E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */,
+				E1E28C8325551E7E00B84CC2 /* PlaceholderTextController.h */,
+				E1E28C8425551E7E00B84CC2 /* PlaceholderTextController.m */,
+			);
+			path = PlaceholderTextView;
+			sourceTree = "<group>";
+		};
 		E1A1C49626CE0DC6002E2A24 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,11 +273,14 @@
 		E1E0E36F25481B7E00F8DA76 /* YMKit */ = {
 			isa = PBXGroup;
 			children = (
+				E18782692949A9370046BEAD /* PlaceholderTextView */,
+				E18782682949A91C0046BEAD /* ScreenAdaptor */,
+				E18782672949A8C10046BEAD /* Timestamp */,
+				E18782662949A89F0046BEAD /* AppInfo */,
 				E1420B9C27632AB20062A1E3 /* Base */,
 				E1B99C7A26F04C77005E4DFE /* Models */,
 				E1A1C49626CE0DC6002E2A24 /* Utils */,
 				E104113C264A1AE200CD1573 /* DynamicDownloadFont */,
-				E1E28C7E25551D7300B84CC2 /* View */,
 				E1E0E38A25481BA300F8DA76 /* Categories */,
 				E1E0E37025481B7E00F8DA76 /* AppDelegate.h */,
 				E1E0E37125481B7E00F8DA76 /* AppDelegate.m */,
@@ -245,22 +288,12 @@
 				E1E0E37725481B7E00F8DA76 /* ViewController.m */,
 				E10DA991254A988000A2740E /* GradientController.h */,
 				E10DA992254A988000A2740E /* GradientController.m */,
-				E10DA995254A99D100A2740E /* TimestampController.h */,
-				E10DA996254A99D100A2740E /* TimestampController.m */,
-				E1E28C8325551E7E00B84CC2 /* PlaceholderTextController.h */,
-				E1E28C8425551E7E00B84CC2 /* PlaceholderTextController.m */,
 				E1F9819A25B187D90023CD35 /* HiddenNavigationBarController.h */,
 				E1F9819B25B187D90023CD35 /* HiddenNavigationBarController.m */,
-				E1A1C49D26CE0FE0002E2A24 /* ScreenAdapatorController.h */,
-				E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */,
 				E10B0EB52701C68B00A354D1 /* SDWebImageViewController.h */,
 				E10B0EB62701C68B00A354D1 /* SDWebImageViewController.m */,
 				E1420B9927632A830062A1E3 /* CommentToolbarController.h */,
 				E1420B9A27632A830062A1E3 /* CommentToolbarController.m */,
-				E1B99C7E26F04FD6005E4DFE /* AppInfoController.h */,
-				E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */,
-				E1B99C8126F07152005E4DFE /* AppInfoCell.h */,
-				E1B99C8226F07152005E4DFE /* AppInfoCell.m */,
 				E1B99C7026F0487F005E4DFE /* AllModules.plist */,
 				E1E0E37C25481B7F00F8DA76 /* Assets.xcassets */,
 				E1E0E37E25481B7F00F8DA76 /* LaunchScreen.storyboard */,
@@ -283,15 +316,6 @@
 				E1B99CC826F2E6E9005E4DFE /* UIImage+YMExtension.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		E1E28C7E25551D7300B84CC2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E1E28C7F25551E3700B84CC2 /* YMPlaceholderTextView.h */,
-				E1E28C8025551E3700B84CC2 /* YMPlaceholderTextView.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -597,6 +621,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.lazyload.ymkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -630,6 +657,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.lazyload.ymkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
