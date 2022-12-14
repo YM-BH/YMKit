@@ -9,6 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 滑动显示和隐藏导航条
 @interface HiddenNavigationBarController : BaseViewController
 
 @end

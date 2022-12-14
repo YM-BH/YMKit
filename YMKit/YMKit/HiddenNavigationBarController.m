@@ -7,9 +7,11 @@
 
 #import "HiddenNavigationBarController.h"
 
+
 @interface HiddenNavigationBarController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) UIView *navView;
+@property (nonatomic, strong) UITableView *tableView;
 @end
 
 @implementation HiddenNavigationBarController
@@ -28,7 +30,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"隐藏导航栏";
-
     [self setUpTableView];
     
     [self setUpNavView];
@@ -75,19 +76,15 @@
 
 - (void)setUpTableView {
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame];
-    if (@available(iOS 11.0, *)) {
-        tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    } else {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
-    tableView.dataSource = self;
-    tableView.delegate = self;
-    [self.view addSubview:tableView];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    [self.view addSubview:self.tableView];
     
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 200)];
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 200)];
     headerView.backgroundColor = [UIColor orangeColor];
-    tableView.tableHeaderView = headerView;
+    self.tableView.tableHeaderView = headerView;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

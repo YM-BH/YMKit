@@ -14,6 +14,7 @@
 		E10DA993254A988000A2740E /* GradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA992254A988000A2740E /* GradientController.m */; };
 		E10DA997254A99D100A2740E /* TimestampController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10DA996254A99D100A2740E /* TimestampController.m */; };
 		E13F45312702C49B00D1B93E /* UIView+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F45302702C49B00D1B93E /* UIView+YMExtension.m */; };
+		E1420B9B27632A830062A1E3 /* CommentToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1420B9A27632A830062A1E3 /* CommentToolbarController.m */; };
 		E187025E2702A87F000C1FF0 /* Pods_YMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187025D2702A87F000C1FF0 /* Pods_YMKit.framework */; };
 		E1A1C49A26CE0DE5002E2A24 /* YMScreenAdapator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49926CE0DE5002E2A24 /* YMScreenAdapator.m */; };
 		E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */; };
@@ -56,6 +57,8 @@
 		E10DA996254A99D100A2740E /* TimestampController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimestampController.m; sourceTree = "<group>"; };
 		E13F452F2702C49B00D1B93E /* UIView+YMExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YMExtension.h"; sourceTree = "<group>"; };
 		E13F45302702C49B00D1B93E /* UIView+YMExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YMExtension.m"; sourceTree = "<group>"; };
+		E1420B9927632A830062A1E3 /* CommentToolbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentToolbarController.h; sourceTree = "<group>"; };
+		E1420B9A27632A830062A1E3 /* CommentToolbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentToolbarController.m; sourceTree = "<group>"; };
 		E187025B2702A841000C1FF0 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E187025D2702A87F000C1FF0 /* Pods_YMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_YMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A1C49826CE0DE5002E2A24 /* YMScreenAdapator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMScreenAdapator.h; sourceTree = "<group>"; };
@@ -142,6 +145,17 @@
 			path = DynamicDownloadFont;
 			sourceTree = "<group>";
 		};
+		E1420B9C27632AB20062A1E3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E1A1C4A026CE4033002E2A24 /* NavigationController.h */,
+				E1A1C4A126CE4033002E2A24 /* NavigationController.m */,
+				E1041139264A1A6E00CD1573 /* BaseViewController.h */,
+				E104113A264A1A6E00CD1573 /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		E1A1C49626CE0DC6002E2A24 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +233,7 @@
 		E1E0E36F25481B7E00F8DA76 /* YMKit */ = {
 			isa = PBXGroup;
 			children = (
+				E1420B9C27632AB20062A1E3 /* Base */,
 				E1B99C7A26F04C77005E4DFE /* Models */,
 				E1A1C49626CE0DC6002E2A24 /* Utils */,
 				E104113C264A1AE200CD1573 /* DynamicDownloadFont */,
@@ -228,10 +243,6 @@
 				E1E0E37125481B7E00F8DA76 /* AppDelegate.m */,
 				E1E0E37625481B7E00F8DA76 /* ViewController.h */,
 				E1E0E37725481B7E00F8DA76 /* ViewController.m */,
-				E1A1C4A026CE4033002E2A24 /* NavigationController.h */,
-				E1A1C4A126CE4033002E2A24 /* NavigationController.m */,
-				E1041139264A1A6E00CD1573 /* BaseViewController.h */,
-				E104113A264A1A6E00CD1573 /* BaseViewController.m */,
 				E10DA991254A988000A2740E /* GradientController.h */,
 				E10DA992254A988000A2740E /* GradientController.m */,
 				E10DA995254A99D100A2740E /* TimestampController.h */,
@@ -244,6 +255,8 @@
 				E1A1C49E26CE0FE0002E2A24 /* ScreenAdapatorController.m */,
 				E10B0EB52701C68B00A354D1 /* SDWebImageViewController.h */,
 				E10B0EB62701C68B00A354D1 /* SDWebImageViewController.m */,
+				E1420B9927632A830062A1E3 /* CommentToolbarController.h */,
+				E1420B9A27632A830062A1E3 /* CommentToolbarController.m */,
 				E1B99C7E26F04FD6005E4DFE /* AppInfoController.h */,
 				E1B99C7F26F04FD6005E4DFE /* AppInfoController.m */,
 				E1B99C8126F07152005E4DFE /* AppInfoCell.h */,
@@ -408,6 +421,7 @@
 				E1A1C49F26CE0FE0002E2A24 /* ScreenAdapatorController.m in Sources */,
 				E1E0E37225481B7E00F8DA76 /* AppDelegate.m in Sources */,
 				E1F9819C25B187D90023CD35 /* HiddenNavigationBarController.m in Sources */,
+				E1420B9B27632A830062A1E3 /* CommentToolbarController.m in Sources */,
 				E1E0E38325481B7F00F8DA76 /* main.m in Sources */,
 				E1B99C8626F1A574005E4DFE /* UIViewController+YMExtension.m in Sources */,
 				E1B99C7526F04B46005E4DFE /* PrintBeautifulLog.m in Sources */,
@@ -564,9 +578,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = T82F5774XJ;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLLBV986S7;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
@@ -582,10 +596,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.lazyload.ymkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = wildcard;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
@@ -599,7 +613,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GLLBV986S7;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
@@ -617,7 +631,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;

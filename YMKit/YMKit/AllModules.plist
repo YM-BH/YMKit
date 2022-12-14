@@ -68,6 +68,14 @@
 			<key>name</key>
 			<string>SDWebImageView</string>
 		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>CommentToolbarController</string>
+			<key>type</key>
+			<integer>8</integer>
+			<key>name</key>
+			<string>评论条</string>
+		</dict>
 	</array>
 </dict>
 </plist>
