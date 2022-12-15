@@ -22,6 +22,7 @@
         
         _placeholderLeftMargin = 8;
         _placeholderTopMargin = 8;
+        self.font = [UIFont systemFontOfSize:18];
         self.alwaysBounceVertical = YES;
         [self setUpSubviews];
         
@@ -43,7 +44,7 @@
     
     // 计算高度
     CGFloat placehoderLabelWidth = self.bounds.size.width - 2 * _placeholderLeftMargin;
-    CGSize textSize = [_placeholder boundingRectWithSize:CGSizeMake(placehoderLabelWidth, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.font} context:nil].size;
+    CGSize textSize = [_placeholderLabel.text boundingRectWithSize:CGSizeMake(placehoderLabelWidth, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : _placeholderLabel.font} context:nil].size;
     
     _placeholderLabel.frame = CGRectMake(_placeholderLeftMargin, _placeholderTopMargin, placehoderLabelWidth, textSize.height);
 }

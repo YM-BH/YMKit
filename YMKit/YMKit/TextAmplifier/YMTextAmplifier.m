@@ -8,6 +8,11 @@
 
 #import "YMTextAmplifier.h"
 
+/// 默认的行高
+static CGFloat const kDefaultLineSpacing = 15;
+/// 默认放大字体大小
+static CGFloat const kDefaultFontSize = 25;
+
 @interface YMTextAmplifier ()
 
 @property (nonatomic, strong) UIScrollView *containerView;
@@ -37,37 +42,13 @@
     [self.containerView addGestureRecognizer:tapRecognizer];
 
     self.contentLabel = [[UILabel alloc] init];
+    self.contentLabel.font = [UIFont systemFontOfSize:self.fontSize <= kDefaultLineSpacing ? kDefaultFontSize : self.fontSize];
     self.contentLabel.textColor = [UIColor blackColor];
     self.contentLabel.backgroundColor = [UIColor clearColor];
     self.contentLabel.numberOfLines = 0;
     [self.containerView addSubview:self.contentLabel];
 
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    // 设置行间距
-    paragraphStyle.lineSpacing = 15;
-
-    NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:self.content];
-
-    [attString addAttributes:@{
-         NSFontAttributeName: [UIFont systemFontOfSize:24],
-         NSParagraphStyleAttributeName: paragraphStyle
-     } range:NSMakeRange(0, self.content.length)];
-    self.contentLabel.attributedText = attString;
-
-    CGFloat leftMargin = 36;
-    CGFloat topMargin = 63;
-    CGFloat width = self.view.bounds.size.width - leftMargin * 2;
-    CGFloat textHeight = [self getStringSizeWithAttString:attString size:CGSizeMake(width, MAXFLOAT)].height;
-    // 获取文字高度和屏幕高度的差值
-    CGFloat deltaY = (self.view.bounds.size.height - textHeight) * 0.5;
-    
-    // 计算内容label的y值，比 topMargin值大，y即居中位置，否则就是 topMargin
-    CGFloat labelY = deltaY > topMargin ? deltaY : topMargin;
-    
-    self.contentLabel.frame = CGRectMake(leftMargin, labelY, width, textHeight);
-    
-    CGFloat contentHeight = deltaY > topMargin ? (self.view.bounds.size.height + 2) : (textHeight + topMargin * 2);
-    self.containerView.contentSize = CGSizeMake(0, contentHeight);
+    [self caculateContent];
 
 } /* setupUI */
 
@@ -93,6 +74,36 @@
 
 - (void)tapGesture {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+/// 计算文本内容
+- (void)caculateContent {
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    // 设置行间距
+    paragraphStyle.lineSpacing = self.lineSpacing <= 0 ? kDefaultLineSpacing : self.lineSpacing;
+
+    NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:self.content];
+
+    [attString addAttributes:@{
+         NSFontAttributeName: self.contentLabel.font,
+         NSParagraphStyleAttributeName: paragraphStyle
+     } range:NSMakeRange(0, self.content.length)];
+    self.contentLabel.attributedText = attString;
+
+    CGFloat leftMargin = 36;
+    CGFloat topMargin = 63;
+    CGFloat width = self.view.bounds.size.width - leftMargin * 2;
+    CGFloat textHeight = [self getStringSizeWithAttString:attString size:CGSizeMake(width, MAXFLOAT)].height;
+    // 获取文字高度和屏幕高度的差值
+    CGFloat deltaY = (self.view.bounds.size.height - textHeight) * 0.5;
+    
+    // 计算内容label的y值，比 topMargin值大，y即居中位置，否则就是 topMargin
+    CGFloat labelY = deltaY > topMargin ? deltaY : topMargin;
+    
+    self.contentLabel.frame = CGRectMake(leftMargin, labelY, width, textHeight);
+    
+    CGFloat contentHeight = deltaY > topMargin ? (self.view.bounds.size.height + 2) : (textHeight + topMargin * 2);
+    self.containerView.contentSize = CGSizeMake(0, contentHeight);
 }
 
 - (void)dealloc {
