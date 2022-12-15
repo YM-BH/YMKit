@@ -8,26 +8,49 @@
 #import "TextAmplifierController.h"
 #import "YMTextAmplifier.h"
 #import "YMScreenAdapator.h"
+#import "YMPlaceholderTextView.h"
 
 @interface TextAmplifierController ()
-
+@property (nonatomic, strong) YMPlaceholderTextView *textView;
+@property (nonatomic, strong) UILabel *smallLabel;
 @end
 
 @implementation TextAmplifierController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    UILabel *smallLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, YM_GET_NAVIGATION_BAR_HEIGHT + 20, self.view.bounds.size.width - 20, 100)];
-    smallLabel.userInteractionEnabled = YES;
-    smallLabel.text = @"他分析称，从疫情开始后计算，石家庄的“超额发烧搜索指数累计面积”已经达到了76，邢台已经达到了67，保定也达到了71。考虑到保定、石家庄、邢台等地的发烧指数仍然在上升，保守地将100作为疫情达峰时的“超额发烧搜索指数累计面积”，将250作为第一轮疫情结束时的“超额发烧搜索指数累计面积”。从而可以计算出各个城市的首轮感染高峰期。";
-    smallLabel.numberOfLines = 0;
-    smallLabel.font = [UIFont systemFontOfSize:12];
-    [self.view addSubview:smallLabel];
     
+    self.textView = [[YMPlaceholderTextView alloc] initWithFrame:CGRectMake(10, YM_GET_NAVIGATION_BAR_HEIGHT, self.view.bounds.size.width - 20, 150)];
+    self.textView.placeholder = @"请输入文字";
+    
+    self.textView.font = [UIFont systemFontOfSize:18];
+    [self.view addSubview:self.textView];
+    
+    UIButton *confirmButton = [[UIButton alloc] initWithFrame:CGRectMake((self.view.bounds.size.width - 80) * 0.5, CGRectGetMaxY(self.textView.frame) + 20, 80, 40)];
+    confirmButton.backgroundColor = [UIColor orangeColor];
+    [confirmButton addTarget:self action:@selector(confirmButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    [confirmButton setTitle:@"确认" forState:UIControlStateNormal];
+    [self.view addSubview:confirmButton];
+
+    self.smallLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(confirmButton.frame) + 20, self.view.bounds.size.width - 20, 100)];
+    self.smallLabel.userInteractionEnabled = YES;
+    self.smallLabel.numberOfLines = 0;
+    self.smallLabel.font = [UIFont systemFontOfSize:12];
+    self.smallLabel.textColor = [UIColor orangeColor];
+    [self.view addSubview:self.smallLabel];
+
     UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapGesture:)];
     doubleTap.numberOfTapsRequired = 2;
-    [smallLabel addGestureRecognizer:doubleTap];
+    [self.smallLabel addGestureRecognizer:doubleTap];
+}
+
+- (void)confirmButtonClick {
+    [self.view endEditing:YES];
+    self.smallLabel.text = self.textView.text;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 - (void)doubleTapGesture:(UIGestureRecognizer *)recognizer {

@@ -37,6 +37,7 @@
     [self.containerView addGestureRecognizer:tapRecognizer];
 
     self.contentLabel = [[UILabel alloc] init];
+    self.contentLabel.textColor = [UIColor blackColor];
     self.contentLabel.backgroundColor = [UIColor clearColor];
     self.contentLabel.numberOfLines = 0;
     [self.containerView addSubview:self.contentLabel];
